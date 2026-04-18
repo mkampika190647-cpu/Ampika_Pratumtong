@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMPIKA PRATUMTONG | Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --accent: #60a5fa;
+            --bg: #020617;
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', sans-serif; 
+            background-color: var(--bg);
+            color: #f1f5f9;
+            scroll-behavior: smooth;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Premium Background Decor */
+        .ambient-mesh {
+            background-image: 
+                radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 100% 100%, rgba(37, 99, 235, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(2, 6, 23, 1) 0%, rgba(2, 6, 23, 1) 100%);
+        }
+
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.015); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(59, 130, 246, 0.4);
+            transform: translateY(-10px) scale(1.01);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6);
+        }
+
+        .featured-glow {
+            border: 1px solid rgba(59, 130, 246, 0.5);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
+            background: linear-gradient(145deg, rgba(30, 58, 138, 0.2) 0%, rgba(2, 6, 23, 0.6) 100%);
+        }
+
+        .drawer-transition { transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1); }
+        
+        .text-gradient {
+            background: linear-gradient(to bottom right, #fff 40%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .shine-effect::after {
+            content: "";
+            position: absolute;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.03), transparent);
+            transform: rotate(45deg);
+            transition: 0.8s;
+        }
+        .shine-effect:hover::after { left: 100%; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0); }
+            50% { transform: translateY(-12px) rotate(1deg); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+
+        .reveal-up {
+            animation: revealUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes revealUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden ambient-mesh min-h-screen">
+
+    <!-- Glowing Decoration Orbs -->
+    <div class="fixed inset-0 pointer-events-none -z-10">
+        <div class="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-blue-600/10 blur-[140px] rounded-full opacity-60"></div>
+        <div class="absolute bottom-1/4 -right-20 w-[600px] h-[600px] bg-blue-400/10 blur-[140px] rounded-full opacity-60"></div>
+    </div>
+
+    <div id="main-content" class="relative z-10 transition-all duration-700">
+        <!-- Cinematic Header -->
+        <header class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="relative shrink-0 reveal-up">
+                    <div class="absolute -inset-1 bg-gradient-to-tr from-blue-600 to-cyan-400 rounded-[3.5rem] blur-xl opacity-30"></div>
+                    <div class="relative w-64 h-64 lg:w-80 lg:h-80 rounded-[3.5rem] bg-slate-900 border-2 border-white/10 overflow-hidden shadow-2xl transition-all duration-700 hover:rotate-1 hover:scale-[1.02]">
+                        <img src="https://raw.githubusercontent.com/mkampika190647-cpu/image/main/profile.jpg" alt="Ampika" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-blue-600 p-5 rounded-[2rem] shadow-2xl border-4 border-[#020617] animate-float">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                </div>
+                
+                <div class="flex-grow text-center lg:text-left reveal-up" style="animation-delay: 0.2s;">
+                    <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-black uppercase tracking-[0.4em] mb-10 shadow-inner">
+                         Professional Data Analyst / Business Analyst
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-gradient leading-none uppercase italic">
+                        AMPIKA <br>PRATUMTONG
+                    </h1>
+                    <p class="text-xl md:text-2xl text-slate-300 font-medium mb-12 max-w-2xl leading-relaxed italic opacity-90 border-l-4 border-blue-600/40 pl-6 mx-auto lg:mx-0">
+                        "Aspiring Data Analyst with a strong foundation in statistics and data analysis. Skilled in SQL, Excel, and Python, with hands-on experience in data cleaning, visualization, and predictive analytics."
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-6">
+                        <a href="https://github.com/mkampika190647-cpu" target="_blank" class="flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/10 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-white/10 transition-all shadow-xl group">
+                            <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            GitHub Profile
+                        </a>
+                        <!-- Contact Details Display Only -->
+                        <div class="flex flex-col md:flex-row gap-4 items-center">
+                            <div class="px-8 py-4 bg-blue-600/90 rounded-2xl font-black text-xs uppercase tracking-[0.2em] text-white shadow-xl cursor-default">
+                                Ampika.pratumtong47@gmail.com
+                            </div>
+                            <div class="px-8 py-4 glass-card rounded-2xl font-black text-xs uppercase tracking-[0.2em] text-slate-300 border-white/20 cursor-default">
+                                092-275-2709
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-6 space-y-32 pb-40">
+            <!-- Education Bento Grid -->
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 reveal-up">
+                <div class="lg:col-span-8 glass-card rounded-[4rem] p-12 relative overflow-hidden group shadow-2xl">
+                    <div class="absolute top-0 right-0 p-12 opacity-[0.03] group-hover:scale-110 transition duration-700 pointer-events-none">
+                        <svg class="w-80 h-80" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-blue-500 font-black text-[10px] uppercase tracking-[0.6em] mb-12 italic">Academic Achievement</h3>
+                        <div class="mb-14">
+                            <h4 class="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase leading-none italic">Prince of Songkla University</h4>
+                            <p class="text-slate-400 font-bold uppercase text-xs mt-4 tracking-[0.3em]">Statistics Major • Faculty of Science</p>
+                        </div>
+                        <div id="grades-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+                            <!-- Grades will be injected here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-950 rounded-[4rem] p-12 flex flex-col justify-between shadow-2xl border border-blue-400/20">
+                    <div>
+                        <h3 class="text-blue-100 font-black text-xs uppercase tracking-[0.5em] mb-12 opacity-80">Final Merit</h3>
+                        <div class="mb-6">
+                            <div class="text-9xl font-black text-white tracking-tighter leading-none italic drop-shadow-2xl">3.21</div>
+                            <div class="text-blue-100 font-black uppercase text-[10px] tracking-[0.4em] mt-6 leading-relaxed">Cumulative Overall GPA</div>
+                        </div>
+                    </div>
+                    <p class="text-blue-50 text-sm font-bold leading-relaxed italic border-l-2 border-white/20 pl-6 uppercase tracking-wider">
+                        "Specialized in turning complex variables into strategic success."
+                    </p>
+                </div>
+            </section>
+
+            <!-- Projects Showcase (Premium Display) -->
+            <section id="projects" class="scroll-mt-20 reveal-up" style="animation-delay: 0.1s;">
+                <div class="flex flex-col lg:flex-row justify-between items-end mb-20 gap-10">
+                    <div class="max-w-2xl">
+                        <h3 class="text-blue-500 font-black text-[11px] uppercase tracking-[0.6em] mb-6 italic">The Portfolio</h3>
+                        <h4 class="text-5xl lg:text-7xl font-black text-white tracking-tighter uppercase italic leading-none mb-10">Projects</h4>
+                        <div class="bg-blue-600/10 border border-blue-500/20 p-5 rounded-[2rem] inline-flex items-center gap-4 shadow-2xl backdrop-blur-xl">
+                            <span class="text-2xl animate-bounce">🖱️</span>
+                            <p class="text-slate-300 text-[13px] font-bold leading-relaxed tracking-wide">
+                                หากต้องการดูไฟล์โปรเจกต์เพิ่มเติม (เช่น โค้ดหรือรายงานฉบับเต็ม) ให้คลิกที่ปุ่ม GitHub ของแต่ละโปรเจกต์ในหน้าต่างรายละเอียดค่ะ
+                            </p>
+                        </div>
+                    </div>
+                    <div id="category-filters" class="flex gap-3 overflow-x-auto no-scrollbar p-3 glass-card rounded-[2.5rem] border-white/10 shadow-2xl">
+                        <!-- Filters will be injected here -->
+                    </div>
+                </div>
+                <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 min-h-[400px]">
+                    <!-- Projects will be injected here -->
+                </div>
+            </section>
+
+            <!-- Skills Bento Grid Arsenal -->
+            <section id="skills" class="reveal-up" style="animation-delay: 0.2s;">
+                <h3 class="text-white font-black text-xs uppercase tracking-[0.6em] mb-16 text-center opacity-30 italic underline decoration-blue-600 decoration-4 underline-offset-[16px]">Expertise Arsenal</h3>
+                <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Skills will be injected here -->
+                </div>
+            </section>
+
+            <!-- Experience Premium Display -->
+            <section id="experience" class="reveal-up" style="animation-delay: 0.3s;">
+                <div class="glass-card rounded-[5rem] p-16 relative overflow-hidden group shadow-[0_50px_100px_-20px_rgba(0,0,0,0.7)] shine-effect">
+                    <div class="absolute top-0 right-0 p-16 opacity-[0.02] group-hover:rotate-12 transition-transform duration-1000 pointer-events-none">
+                        <svg class="w-96 h-96" fill="currentColor" viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 012 2v2h4a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h4V4a2 2 0 012-2zm4 4V4h-4v2h4z"/></svg>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-10">
+                            <div>
+                                <div class="text-blue-500 font-black text-[10px] uppercase tracking-[0.5em] mb-5 flex items-center gap-2 italic">Professional Background</div>
+                                <h4 class="text-5xl lg:text-6xl font-black text-white leading-none mb-4 italic uppercase tracking-tighter">Field Data Expert</h4>
+                                <p class="text-slate-400 font-bold uppercase text-[11px] tracking-[0.4em] opacity-80 italic pl-1">Enumerator | Private Sector Research Support</p>
+                            </div>
+                            <div class="bg-blue-600/10 px-10 py-6 rounded-[2.5rem] border border-blue-500/20 shadow-inner">
+                                <span class="text-blue-400 font-black text-xs uppercase tracking-widest italic tracking-[0.3em]">Project Contract</span>
+                            </div>
+                        </div>
+                        <div id="experience-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                            <!-- Experience will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Full Screen Details View (Optimized Layout) -->
+    <div id="side-drawer" class="fixed top-0 right-0 h-screen w-full bg-[#020617] z-[100] drawer-transition translate-x-full flex flex-col overflow-hidden">
+        <!-- Drawer Header -->
+        <div class="p-8 border-b border-white/5 flex items-center justify-between bg-white/[0.01]">
+            <div class="flex items-center gap-8">
+                <button onclick="closeDrawer()" class="p-4 bg-white/5 rounded-2xl hover:bg-blue-600 transition-all text-slate-400 hover:text-white shadow-2xl group">
+                    <svg class="w-6 h-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div>
+                    <span id="drawer-category" class="text-blue-500 font-black text-[11px] uppercase tracking-[0.5em] mb-1 block italic opacity-70">CATEGORY</span>
+                    <h2 id="drawer-title" class="text-3xl lg:text-4xl font-black text-white tracking-tighter uppercase italic leading-none">PROJECT TITLE</h2>
+                </div>
+            </div>
+            <button onclick="closeDrawer()" class="text-slate-600 hover:text-red-500 transition-all p-2 scale-125">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </div>
+
+        <!-- Optimized Scrollable Content -->
+        <div class="flex-grow overflow-y-auto no-scrollbar p-8 lg:p-16 bg-slate-900/20">
+            <div class="max-w-7xl mx-auto space-y-12">
+                
+                <!-- Main Description Grid: 3 Columns for quick reading -->
+                <div id="drawer-description-grid" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Data will be injected here via JS -->
+                </div>
+
+                <!-- Technical & Summary Row -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white/5 border border-white/5 rounded-[3rem] p-10 space-y-10 shadow-2xl relative overflow-hidden shine-effect">
+                        <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-blue-600/5 blur-3xl rounded-full"></div>
+                        <div class="space-y-10 relative z-10">
+                            <div>
+                                <div class="text-slate-500 text-[10px] font-black uppercase tracking-[0.4em] mb-4 italic opacity-60">ระเบียบวิธีวิจัย (Methodology)</div>
+                                <div id="drawer-model" class="text-2xl font-black text-white tracking-tight leading-tight italic uppercase"></div>
+                            </div>
+                            <div>
+                                <div class="text-slate-500 text-[10px] font-black uppercase tracking-[0.4em] mb-4 italic opacity-60">ผลการศึกษาหลัก (Results)</div>
+                                <div id="drawer-factor" class="text-2xl font-black text-emerald-400 tracking-tight leading-tight italic"></div>
+                            </div>
+                            <div class="pt-8 border-t border-white/10">
+                                <div class="text-blue-500 text-[11px] font-black uppercase tracking-[0.5em] mb-3 italic">Final Insight</div>
+                                <p id="drawer-insight" class="text-slate-300 leading-relaxed text-lg font-bold italic break-words"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action Card -->
+                    <div class="flex flex-col justify-center gap-8">
+                        <div class="bg-blue-600/10 p-10 rounded-[3rem] border border-blue-500/20 text-center">
+                            <h4 class="text-xl font-bold text-white mb-4 italic">ต้องการตรวจสอบกระบวนการทำงานฉบับเต็ม?</h4>
+                            <p class="text-slate-400 text-sm mb-8">คุณสามารถเข้าถึง Source Code, ไฟล์ข้อมูล และรายงานการวิจัยฉบับสมบูรณ์ได้ผ่าน GitHub Repository ของโครงการนี้</p>
+                            <a id="github-link" href="#" target="_blank" class="inline-flex items-center gap-4 bg-blue-600 px-10 py-5 rounded-[2rem] text-white font-black text-sm uppercase tracking-widest hover:bg-blue-500 transition-all hover:scale-105 shadow-2xl">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                Open GitHub Repository
+                            </a>
+                        </div>
+                        <button onclick="closeDrawer()" class="w-full py-5 glass-card rounded-[2rem] font-black text-xs uppercase tracking-[0.5em] hover:text-white hover:border-blue-500 transition-all italic">
+                            กลับไปที่หน้าหลัก
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        const PROJECTS = [
+            { id: 1, title: "Multivariate Analysis: Environment & Transport", category: "Statistics", difficulty: "Hard", description: "ศึกษาความสัมพันธ์ระหว่างการปล่อยก๊าซเรือนกระจก (GHG) จากภาคขนส่งกับโครงสร้างพื้นฐานคมนาคมทั่วโลก", objective: "เพื่อศึกษาความสัมพันธ์ระหว่างการปล่อยก๊าซเรือนกระจก (GHG) จากภาคขนส่งและโครงสร้างพื้นฐานด้านการคมนาคมในหลายประเทศ", methodology: "ใช้เทคนิคการจัดกลุ่ม (Cluster Analysis) เพื่อแบ่งกลุ่มประเทศ และการวิเคราะห์จำแนกกลุ่ม (Discriminant Analysis) เพื่อสร้างแบบจำลองจำแนกประเภทประเทศตามลักษณะเศรษฐกิจและสิ่งแวดล้อม", result: "แบ่งประเทศออกเป็น 4 กลุ่มหลัก เช่น กลุ่มประเทศกำลังพัฒนา, กลุ่มประเทศที่เน้นความยั่งยืน และกลุ่มประเทศอุตสาหกรรมขนาดใหญ่ที่เป็นตัวแปรผิดปกติ (Outlier) เนื่องจากปล่อยก๊าซ GHG สูงมาก", technicalDetails: { model: "Cluster & Discriminant Analysis", factor: "GHG vs Transportation Infra", insight: "สามารถระบุกลุ่มประเทศอุตสาหกรรมที่ปล่อยก๊าซ GHG สูงผิดปกติเพื่อวางแผนนโยบายเฉพาะกลุ่ม" }, tags: ["Multivariate", "R", "Environmental"], url: "https://github.com/mkampika190647-cpu/multivariate-environment-analysis" },
+            { id: 2, title: "Global Literacy Rate Analysis (1970–2024)", category: "Statistics", difficulty: "Medium", description: "วิเคราะห์ปัจจัยทางการศึกษาที่มีผลต่ออัตราการรู้หนังสือของประชากรโลกผ่านข้อมูลประวัติศาสตร์ขนาดใหญ่", objective: "ศึกษาปัจจัยด้านทรัพยากรการศึกษาที่ส่งผลต่ออัตราการรู้หนังสือทั่วโลก ระหว่างปี 1970–2024", methodology: "ใช้การถดถอยเชิงเส้นพหุ (Multiple Linear Regression) เพื่อวิเคราะห์อิทธิพลของตัวแปรต่าง ๆ", result: "'อัตราการสำเร็จการศึกษาระดับประถมศึกษา' เป็นปัจจัยหลักที่มีความสัมพันธ์เชิงบวกต่อการรู้หนังสืออย่างมีนัยสำคัญที่สุด", technicalDetails: { model: "Multiple Linear Regression", factor: "Primary Education Completion", insight: "ทรัพยากรด้านการศึกษาปฐมวัยเป็นรากฐานที่สำคัญที่สุดในการพัฒนาทักษะการอ่านออกเขียนได้ทั่วโลก" }, tags: ["Regression", "Python", "World Bank"], url: "https://github.com/mkampika190647-cpu/global-literacy-analysis" },
+            { id: 3, title: "Electricity Demand Forecasting", category: "Predictive", difficulty: "Hard", description: "พัฒนาแบบจำลองพยากรณ์ความต้องการใช้ไฟฟ้าในระยะสั้นสำหรับพื้นที่ภาคใต้ของประเทศไทย", objective: "วิเคราะห์องค์ประกอบของอนุกรมเวลาและพัฒนาแบบจำลองพยากรณ์ความต้องการใช้ไฟฟ้าในระยะสั้นของภาคใต้", methodology: "เปรียบเทียบแบบจำลองหลายรูปแบบ เช่น Naive, SES, Additive Decomposition และ Holt-Winters", result: "แบบจำลอง Holt-Winters Additive มีความแม่นยำสูงสุด เนื่องจากสามารถรองรับทั้งแนวโน้ม (Trend) และฤดูกาลรายวัน (Daily Seasonality) ได้ดีที่สุด", technicalDetails: { model: "Time Series (Holt-Winters)", factor: "Trend & Daily Seasonality", insight: "ช่วยให้หน่วยงานบริหารพลังงานสามารถวางแผนสำรองไฟฟ้าในช่วง Peak Load ได้แม่นยำยิ่งขึ้น" }, tags: ["Time Series", "Minitab", "Forecasting"], url: "https://github.com/mkampika190647-cpu/electricity-demand-forecasting" },
+            { id: 4, title: "Household Income Survey (PSU Families)", category: "Statistics", difficulty: "Medium", description: "ประมาณการสัดส่วนนักศึกษาที่มีพื้นฐานครอบครัวเกษตรกรและศึกษาผลกระทบต่อรายได้ต่อเดือน", objective: "ศึกษาสัดส่วนนักศึกษาคณะวิทยาศาสตร์ ม.อ. ที่มาจากครอบครัวเกษตรกร และผลกระทบต่อรายได้ต่อเดือน", methodology: "ใช้การสุ่มตัวอย่างแบบแบ่งชั้นภูมิ (Stratified Sampling) ตามชั้นปี พร้อมตรวจสอบความถูกต้องของข้อมูล", result: "รายได้เฉลี่ยของนักศึกษาเพิ่มขึ้นตามชั้นปี โดยนักศึกษาชั้นปีที่ 1 มีรายได้เฉลี่ยต่ำสุด และชั้นปีที่ 4 มีรายได้เฉลี่ยสูงสุด", technicalDetails: { model: "Stratified Random Sampling", factor: "Household Income Distribution", insight: "ฐานะทางเศรษฐกิจมีความสัมพันธ์กับลำดับชั้นปีการศึกษา และแสดงให้เห็นถึงความยั่งยืนของรายได้ครอบครัวเกษตรกร" }, tags: ["Sampling", "Survey", "Research"], url: "https://github.com/mkampika190647-cpu/household-income-survey" },
+            { id: 5, title: "Electricity Billing Calculator", category: "Programming", difficulty: "Easy", description: "แอปพลิเคชัน Python บน Google Colab สำหรับคำนวณค่าไฟฟ้าตามเรทการไฟฟ้าส่วนภูมิภาค (PEA)", objective: "โปรแกรมภาษา Python สำหรับคำนวณค่าไฟฟ้าของการไฟฟ้าส่วนภูมิภาค โดยพิจารณาตามหน่วยการใช้งาน อัตราก้าวหน้า ค่า Ft และภาษีมูลค่าเพิ่ม", methodology: "พัฒนาโปรแกรมโดยใช้ตรรกะเงื่อนไข (Logical Conditions) และอัลกอริทึมในการประมวลผลข้อมูลหน่วยการใช้งานตาม Scenario ต่างๆ พร้อมการทดสอบ Unit Testing", result: "โปรแกรมสามารถคำนวณค่าไฟฟ้าได้ถูกต้องแม่นยำ 100% สอดคล้องกับมาตรฐานบิลค่าไฟฟ้าจริง", technicalDetails: { model: "Python Programming / Logic", factor: "PEA Progressive Rate Logic", insight: "ช่วยลดความผิดพลาดในการคำนวณบิลค่าไฟฟ้าด้วยระบบอัตโนมัติที่จัดการอัตราก้าวหน้าได้ซับซ้อน" }, tags: ["Python", "Automation", "Google Colab"], url: "https://github.com/mkampika190647-cpu/electricity-billing-calculator" },
+            { id: 6, title: "Term Deposit ML Subscription Prediction", category: "ML", difficulty: "Hard", description: "ทำนายการตัดสินใจสมัครเงินฝากประจำของลูกค้าธนาคารโดยใช้แบบจำลอง Decision Tree", objective: "การใช้ Machine Learning (Decision Tree) เพื่อทำนายว่าลูกค้าธนาคารจะสมัครเงินฝากประจำหรือไม่", methodology: "สร้างแบบจำลอง Decision Tree เพื่อจำแนกกลุ่มลูกค้า และวิเคราะห์ Feature Importance เพื่อหาปัจจัยหลักที่ส่งผลต่อการตัดสินใจ", result: "พบว่า 'ระยะเวลาการสนทนา' (Duration) เป็นปัจจัยที่มีอิทธิพลสูงที่สุดในการตัดสินใจสมัครเงินฝากประจำ", technicalDetails: { model: "Decision Tree Classifier", factor: "Call Duration Importance", insight: "ธนาคารควรให้ความสำคัญกับคุณภาพและระยะเวลาในการสื่อสารข้อมูล เนื่องจากส่งผลโดยตรงต่อ Conversion Rate" }, tags: ["ML", "Decision Tree", "Bank Marketing"], url: "https://github.com/mkampika190647-cpu/term-deposit-prediction" },
+            { id: 7, title: "Netflix Global Trends Dashboard", category: "Visualization", difficulty: "Medium", description: "Interactive Tableau Dashboard สำหรับวิเคราะห์กลยุทธ์คอนเทนต์และเรตติ้งทั่วโลก", objective: "เพื่อสร้างภาพข้อมูลเชิงโต้ตอบ (Visualization) สำหรับวิเคราะห์ข้อมูลคอนเทนต์บน Netflix ทั่วโลก", methodology: "ใช้ Tableau ในการเชื่อมต่อข้อมูลและสร้าง Dashboard เพื่อสำรวจความสัมพันธ์ระหว่างประเภทคอนเทนต์ ปีที่ฉาย และเรตติ้ง", result: "ช่วยให้ระบุแนวโน้มความนิยมของประเภทคอนเทนต์ในภูมิภาคต่างๆ และประเมินผลสำเร็จของกลยุทธ์ Localization ได้อย่างชัดเจน", technicalDetails: { model: "Tableau Visual Analysis", factor: "Content Localization Trends", insight: "คอนเทนต์ประเภท International TV Shows มีการเติบโตอย่างก้าวกระโดดในกลุ่มผู้ใช้งานเอเชีย" }, tags: ["Tableau", "Dashboard", "EDA"], url: "https://github.com/mkampika190647-cpu/netflix-dashboard" },
+            { id: 8, title: "Web Data Management (PHP/MySQL)", category: "Engineering", difficulty: "Medium", description: "พัฒนาระบบฐานข้อมูลและ Dashboard เพื่อย้ายการจัดการข้อมูลจาก Excel สู่ระบบอัตโนมัติ", objective: "พัฒนาระบบฐานข้อมูลและหน้าเว็บแอปพลิเคชันเพื่อเปลี่ยนกระบวนการจัดการข้อมูลจาก Spreadsheet สู่ระบบอัตโนมัติ", methodology: "ออกแบบ Relational Database และพัฒนาฝั่ง Backend ด้วย PHP/MySQL สำหรับจัดการข้อมูล (CRUD) และสรุปผลด้วย Dashboard", result: "ช่วยเพิ่มประสิทธิภาพในการทำงาน ลดความซ้ำซ้อน และลดข้อผิดพลาดจากการกรอกข้อมูลด้วยมือได้ถึง 40%", technicalDetails: { model: "PHP & MySQL Integration", factor: "Relational Schema Design", insight: "การมีระบบสืบค้นข้อมูลแบบ Real-time ช่วยให้ฝ่ายบริหารเข้าถึงข้อมูลสรุปผลเพื่อตัดสินใจได้เร็วขึ้น" }, tags: ["SQL", "PHP", "Database"], url: "https://github.com/mkampika190647-cpu/web-data-management-dashboard" }
+        ];
+
+        const GRADES = [
+            { code: "346-332", label: "Predictive Analysis", score: "A", color: "text-emerald-400" },
+            { code: "346-232", label: "Regression Analysis", score: "B", color: "text-blue-400" },
+            { code: "346-322", label: "Sampling Technique", score: "B", color: "text-blue-400" },
+            { code: "346-331", label: "Multivariate Analysis", score: "B", color: "text-blue-400" },
+            { code: "346-451", label: "Stat for DS & BA", score: "B", color: "text-blue-400" },
+            { code: "346-111", label: "Principles of Stat", score: "C", color: "text-slate-500" },
+            { code: "346-223", label: "Mathematical Stat I", score: "C", color: "text-slate-500" },
+            { code: "346-333", label: "Experimental Design", score: "C+", color: "text-slate-400" },
+            { code: "346-321", label: "Mathematical Stat II", score: "C+", color: "text-slate-400" }
+        ];
+
+        const SKILLS = [
+            { category: "1. Statistical Skills", icon: "📊", items: ["Descriptive Statistics", "Hypothesis Testing", "Correlation Analysis", "Regression Analysis", "Sampling Techniques", "Multivariate Analysis"] },
+            { category: "2. Platforms & Dev", icon: "💻", items: ["Visual Studio Code", "Google Colab"] },
+            { category: "3. Tools & Langs", icon: "🔧", items: ["Python", "SQL", "Excel", "R", "SPSS", "Minitab", "Tableau", "Machine Learning", "Office Tools"] },
+            { category: "4. Data Skills", icon: "📁", items: ["Data Cleaning", "Transformation", "Visualization", "Exploratory (EDA)", "Insight Generation"] },
+            { category: "5. Database & Web", icon: "💾", items: ["MySQL", "phpMyAdmin", "SQL Query", "Dashboard Dev", "PHP/HTML"] },
+            { category: "6. Field Research", icon: "📝", items: ["Survey Design", "Questionnaire Dev", "Field Interviewing", "Quota Sampling", "Data Validation"] }
+        ];
+
+        const EXPS = [
+            { title: "Strategic Interviewing", desc: "ดำเนินการสัมภาษณ์แบบตัวต่อตัวกับกลุ่มเป้าหมาย โดยใช้แบบสอบถามที่มีโครงสร้างเพื่อรวบรวมข้อมูลคุณภาพสูง" },
+            { title: "Targeted Sampling", desc: "คัดกรองและเลือกผู้ตอบแบบสอบถามตามเกณฑ์ที่กำหนด เพื่อให้กลุ่มตัวอย่างสอดคล้องกับการออกแบบงานวิจัย" },
+            { title: "Strict Quality Control", desc: "บันทึกคำตอบอย่างเป็นระบบและทำการตรวจสอบความถูกต้องของข้อมูลอย่างละเอียดก่อนส่งประมวลผล" },
+            { title: "Ethics & Confidentiality", desc: "ปฏิบัติตามแนวทางจรรยาบรรณวิจัยอย่างเคร่งครัด รักษาความเป็นส่วนตัวและความลับของผู้ให้ข้อมูล" }
+        ];
+
+        function initUI() {
+            const gradesGrid = document.getElementById('grades-grid');
+            const skillsContainer = document.getElementById('skills-container');
+            const filterContainer = document.getElementById('category-filters');
+            const expGrid = document.getElementById('experience-grid');
+
+            if (gradesGrid) {
+                gradesGrid.innerHTML = GRADES.map(g => `
+                    <div class="bg-white/5 border border-white/5 p-5 rounded-3xl flex flex-col justify-center transition-all duration-300 hover:scale-105 hover:bg-white/10 shadow-xl">
+                        <div class="text-[9px] font-black text-slate-500 mb-2 tracking-widest">${g.code}</div>
+                        <div class="text-3xl font-black ${g.color} leading-none italic">${g.score}</div>
+                        <div class="text-[9px] text-slate-300 font-bold uppercase mt-3 leading-none">${g.label}</div>
+                    </div>
+                `).join('');
+            }
+
+            if (skillsContainer) {
+                skillsContainer.innerHTML = SKILLS.map(s => `
+                    <div class="glass-card rounded-[3.5rem] p-12 transition-all duration-500 hover:border-blue-500/30 group hover:bg-white/[0.04] shadow-2xl relative overflow-hidden shine-effect">
+                        <div class="absolute -right-10 -top-10 w-32 h-32 bg-blue-600/5 blur-3xl rounded-full"></div>
+                        <div class="flex items-center gap-8 mb-10 relative z-10">
+                            <div class="p-6 bg-white/5 rounded-3xl group-hover:bg-blue-600 transition-all duration-500 text-3xl shadow-inner">${s.icon}</div>
+                            <h4 class="text-sm font-black text-white tracking-[0.5em] uppercase italic opacity-70 group-hover:opacity-100 transition-opacity">${s.category}</h4>
+                        </div>
+                        <div class="flex flex-wrap gap-3 relative z-10">
+                            ${s.items.map(item => `<span class="bg-white/5 border border-white/5 px-4 py-2 rounded-xl text-[10px] font-black text-slate-400 uppercase tracking-widest transition-colors hover:text-white hover:border-blue-500/30 cursor-default">${item}</span>`).join('')}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            if (filterContainer) {
+                const cats = ["All", "Statistics", "ML", "Predictive", "Visualization"];
+                filterContainer.innerHTML = cats.map(c => `
+                    <button onclick="filterProjects('${c}')" class="px-10 py-4 rounded-[1.5rem] font-black transition-all duration-500 whitespace-nowrap text-[11px] uppercase tracking-[0.2em] filter-btn ${c === 'All' ? 'bg-blue-600 text-white shadow-[0_20px_40px_-10px_rgba(59,130,246,0.6)]' : 'text-slate-500 hover:text-white hover:bg-white/5'}">
+                        ${c}
+                    </button>
+                `).join('');
+            }
+
+            if (expGrid) {
+                expGrid.innerHTML = EXPS.map(e => `
+                    <div class="border-l-4 border-white/5 pl-12 transition-all duration-500 hover:border-blue-500/50 group">
+                        <h5 class="text-white font-black text-xl mb-5 uppercase italic transition-colors group-hover:text-blue-400 leading-none tracking-tighter">${e.title}</h5>
+                        <p class="text-slate-500 text-[15px] leading-relaxed font-medium opacity-80">${e.desc}</p>
+                    </div>
+                `).join('');
+            }
+
+            renderProjects("All");
+        }
+
+        function renderProjects(cat) {
+            const grid = document.getElementById('projects-grid');
+            if (!grid) return;
+            grid.classList.add('opacity-0');
+            
+            setTimeout(() => {
+                const filtered = cat === "All" ? PROJECTS : PROJECTS.filter(p => p.category === cat || p.category.includes(cat));
+                grid.innerHTML = filtered.map(p => {
+                    const isImportant = (p.id === 3 || p.id === 6);
+                    return `
+                        <div onclick="openDrawer(${p.id})" class="card-hover glass-card rounded-[4rem] p-12 flex flex-col h-full cursor-pointer group shadow-2xl ${isImportant ? 'md:col-span-2 featured-glow ring-1 ring-blue-500/20' : ''} relative overflow-hidden">
+                            ${isImportant ? '<div class="absolute -right-20 -top-20 w-80 h-80 bg-blue-600/10 blur-[100px] rounded-full"></div>' : ''}
+                            <div class="flex justify-between items-start mb-12 relative z-10">
+                                <div class="flex items-center gap-6">
+                                    <div class="p-6 ${isImportant ? 'bg-blue-600 shadow-[0_0_40px_rgba(59,130,246,0.6)]' : 'bg-white/5'} rounded-[1.8rem] text-white transition-all duration-700 group-hover:scale-110 group-hover:rotate-12 shadow-2xl">
+                                        ${isImportant ? '💎' : '🌟'}
+                                    </div>
+                                    ${isImportant ? '<span class="text-blue-400 font-black text-xs uppercase tracking-[0.4em] italic">High Impact</span>' : ''}
+                                </div>
+                                <svg class="w-10 h-10 text-slate-700 transition-all duration-700 group-hover:text-white group-hover:translate-x-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3 class="${isImportant ? 'text-5xl lg:text-6xl' : 'text-2xl'} font-black text-white mb-8 uppercase transition-colors group-hover:text-blue-400 leading-none tracking-tighter italic relative z-10">${p.title}</h3>
+                            <p class="text-slate-400 text-lg leading-relaxed mb-12 font-medium italic opacity-80 relative z-10 line-clamp-3">"${p.description}"</p>
+                            <div class="mt-auto flex flex-wrap gap-4 relative z-10">
+                                ${p.tags.map(t => `<span class="text-[10px] font-black bg-white/5 text-slate-400 px-6 py-3 rounded-2xl uppercase border border-white/5 group-hover:border-blue-900/30 transition-all tracking-[0.2em]">#${t}</span>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                grid.classList.remove('opacity-0');
+                grid.classList.add('opacity-100');
+            }, 100);
+        }
+
+        function filterProjects(cat) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                const isActive = btn.innerText.trim() === cat;
+                btn.classList.toggle('bg-blue-600', isActive);
+                btn.classList.toggle('text-white', isActive);
+                btn.classList.toggle('shadow-[0_20px_40px_-10px_rgba(59,130,246,0.6)]', isActive);
+                btn.classList.toggle('text-slate-500', !isActive);
+            });
+            renderProjects(cat);
+        }
+
+        function openDrawer(id) {
+            const p = PROJECTS.find(item => item.id === id);
+            if (!p) return;
+
+            document.getElementById('drawer-category').textContent = p.category;
+            document.getElementById('drawer-title').textContent = p.title;
+            
+            // New 3-Column Grid for project description
+            document.getElementById('drawer-description-grid').innerHTML = `
+                <div class="bg-white/5 p-8 rounded-[3rem] border border-white/5 shadow-inner hover:bg-white/10 transition-all reveal-up">
+                    <h5 class="text-blue-400 font-black uppercase text-[10px] tracking-[0.5em] mb-6 italic flex items-center gap-4">
+                       <span class="w-8 h-[2px] bg-blue-500 rounded-full"></span> วัตถุประสงค์ (Objective)
+                    </h5>
+                    <p class="text-lg text-white leading-relaxed font-medium">"${p.objective}"</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-[3rem] border border-white/5 shadow-inner hover:bg-white/10 transition-all reveal-up" style="animation-delay:0.1s">
+                    <h5 class="text-white font-black uppercase text-[10px] tracking-[0.5em] mb-6 italic flex items-center gap-4 opacity-50">
+                       <span class="w-8 h-[2px] bg-white rounded-full"></span> วิธีการ (Methodology)
+                    </h5>
+                    <p class="text-lg text-slate-300 leading-relaxed font-medium">${p.methodology}</p>
+                </div>
+                <div class="bg-emerald-500/5 p-8 rounded-[3rem] border border-emerald-500/20 shadow-2xl reveal-up" style="animation-delay:0.2s">
+                    <h5 class="text-emerald-400 font-black uppercase text-[10px] tracking-[0.5em] mb-6 italic flex items-center gap-4">
+                       <span class="w-8 h-[2px] bg-emerald-500 rounded-full"></span> ผลการศึกษา (Result)
+                    </h5>
+                    <p class="text-lg text-emerald-50 leading-relaxed font-bold italic uppercase tracking-tight">${p.result}</p>
+                </div>
+            `;
+            
+            document.getElementById('drawer-model').textContent = p.technicalDetails.model;
+            document.getElementById('drawer-factor').textContent = p.technicalDetails.factor;
+            document.getElementById('drawer-insight').textContent = p.technicalDetails.insight;
+            document.getElementById('github-link').setAttribute('href', p.url);
+            
+            const drawer = document.getElementById('side-drawer');
+            const content = document.getElementById('main-content');
+            
+            drawer.classList.remove('translate-x-full');
+            content.classList.add('opacity-30', 'scale-[0.97]', 'blur-[8px]');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            const drawer = document.getElementById('side-drawer');
+            const content = document.getElementById('main-content');
+            drawer.classList.add('translate-x-full');
+            content.classList.remove('opacity-30', 'scale-[0.97]', 'blur-[8px]');
+            document.body.style.overflow = '';
+        }
+
+        window.addEventListener('DOMContentLoaded', initUI);
+    </script>
+</body>
+</html>
