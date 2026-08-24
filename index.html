@@ -371,7 +371,7 @@
                         </h2>
 
                         <p class="text-slate-400 leading-relaxed max-w-2xl">
-                            รวมโปรเจกต์ด้าน Data, Statistics, Machine Learning, Dashboard และ Application Development กดที่การ์ดเพื่อดูวิธีการทำงาน ผลลัพธ์ และลิงก์ GitHub ของแต่ละโปรเจกต์
+                            ผลงานที่คัดเลือกครอบคลุม Application Development, Web & Database, Machine Learning และ Statistical Forecasting พร้อมโปรเจกต์ด้าน Data และ Visualization เพิ่มเติม กดที่การ์ดเพื่อดูรายละเอียด วิธีการทำงาน ผลลัพธ์ และ GitHub Repository
                         </p>
 
                     </div>
@@ -654,6 +654,7 @@
         category: "Application",
         type: "Internship Project",
         featured: true,
+        featuredRank: 1,
         icon: "📍",
 
         description:
@@ -694,6 +695,7 @@
         category: "Machine Learning",
         type: "Machine Learning Classification Project",
         featured: true,
+        featuredRank: 3,
         icon: "🤖",
 
         description:
@@ -734,6 +736,7 @@
         category: "Web Development",
         type: "Web Application & Database Project",
         featured: true,
+        featuredRank: 2,
         icon: "🏢",
 
         description:
@@ -855,7 +858,8 @@
         title: "Electricity Demand Forecasting",
         category: "Statistics",
         type: "Time Series Forecasting Project",
-        featured: false,
+        featured: true,
+        featuredRank: 4,
         icon: "⚡",
 
         description:
@@ -1286,7 +1290,12 @@
                     : PROJECTS.filter(
                         project => project.category === category
                     )
-            ).sort((a, b) => Number(b.featured) - Number(a.featured));
+            ).sort((a, b) => {
+                if (a.featured && b.featured) {
+                    return (a.featuredRank || 99) - (b.featuredRank || 99);
+                }
+                return Number(b.featured) - Number(a.featured);
+            });
 
 
             grid.innerHTML = filtered.map(project => `
