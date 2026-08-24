@@ -144,6 +144,19 @@
 
 <body class="overflow-x-hidden ambient-mesh min-h-screen">
 
+    <!-- Navigation -->
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 z-[90] w-[calc(100%-2rem)] max-w-5xl">
+        <div class="glass-card rounded-2xl px-4 sm:px-6 py-3 flex items-center justify-between shadow-2xl">
+            <a href="#top" class="font-black tracking-tight text-sm sm:text-base">AMPIKA</a>
+            <div class="flex items-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-bold text-slate-400">
+                <a href="#about" class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">About</a>
+                <a href="#projects" class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">Projects</a>
+                <a href="#skills" class="hidden sm:block px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">Skills</a>
+                <a href="#experience" class="hidden sm:block px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">Experience</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Background -->
     <div class="fixed inset-0 pointer-events-none -z-10">
         <div class="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-blue-600/10 blur-[150px] rounded-full"></div>
@@ -159,7 +172,7 @@
         <!-- =================================================
              HERO
         ================================================== -->
-        <header class="pt-24 lg:pt-32 pb-20 px-6 max-w-7xl mx-auto">
+        <header id="top" class="pt-32 lg:pt-36 pb-20 px-6 max-w-7xl mx-auto">
 
             <div class="flex flex-col lg:flex-row items-center gap-14 lg:gap-20">
 
@@ -206,7 +219,7 @@
 
                     <div class="inline-flex items-center px-5 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[11px] font-black uppercase tracking-[.25em] mb-8">
 
-                        Data Analyst&nbsp; | &nbsp;Application & Web Development
+                        Statistics&nbsp; • &nbsp;Data Analytics&nbsp; • &nbsp;Application Development
 
                     </div>
 
@@ -220,11 +233,10 @@
 
                     <p class="text-lg md:text-xl text-slate-300 font-medium mb-10 max-w-3xl leading-relaxed border-l-4 border-blue-600/40 pl-6 mx-auto lg:mx-0">
 
-                        Statistics student passionate about turning data into practical
-                        solutions through analytics and technology. Experienced in data
-                        analysis, visualization, machine learning, database development,
-                        cloud data analytics, and data-driven applications through
-                        academic and real-world projects.
+                        Statistics student with hands-on experience in data analysis, machine learning,
+                        dashboards, databases, and application development through academic projects
+                        and internship work. I enjoy turning data and practical problems into
+                        clear analyses and usable tools.
 
                     </p>
 
@@ -281,7 +293,7 @@
             <!-- =================================================
                  ABOUT + EDUCATION
             ================================================== -->
-            <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 reveal-up">
+            <section id="about" class="grid grid-cols-1 lg:grid-cols-12 gap-8 reveal-up scroll-mt-28">
 
                 <!-- About -->
                 <div class="lg:col-span-7 glass-card rounded-[3.5rem] p-10 lg:p-12">
@@ -291,17 +303,14 @@
                     </div>
 
                     <h2 class="text-3xl lg:text-4xl font-black tracking-tight mb-7">
-                        Statistics × Analytics × Technology
+                        Statistics to Practical Solutions
                     </h2>
 
                     <p class="text-slate-400 text-lg leading-relaxed">
-                        Statistics student passionate about turning data into practical
-                        solutions through analytics and technology. Experienced in data
-                        analysis, visualization, machine learning, and developing
-                        data-driven applications through academic and real-world
-                        projects. Interested in combining analytical thinking with
-                        programming to build practical solutions, particularly in
-                        Data Analytics and application development.
+                        My background is in Statistics, with project experience covering data analysis,
+                        forecasting, machine learning, dashboards, databases, and web/application development.
+                        I am especially interested in work where analytical thinking and programming
+                        can be combined to solve practical data problems.
                     </p>
 
                 </div>
@@ -362,7 +371,7 @@
                         </h2>
 
                         <p class="text-slate-400 leading-relaxed max-w-2xl">
-                            เลือกโปรเจกต์เพื่อดูวัตถุประสงค์ วิธีการดำเนินงาน ผลลัพธ์หลัก และแนวทางด้านเทคนิค โดยสามารถเปิด GitHub Repository เพื่อดูรายละเอียด ไฟล์โปรเจกต์ ภาพผลลัพธ์ หรือรายงานฉบับเต็มได้
+                            รวมโปรเจกต์ด้าน Data, Statistics, Machine Learning, Dashboard และ Application Development กดที่การ์ดเพื่อดูวิธีการทำงาน ผลลัพธ์ และลิงก์ GitHub ของแต่ละโปรเจกต์
                         </p>
 
                     </div>
@@ -438,6 +447,11 @@
             </section>
 
         </main>
+
+        <footer class="border-t border-white/5 py-10 px-6 text-center text-slate-500 text-xs">
+            <p>Built as a personal portfolio to present academic, internship, and data projects.</p>
+            <p class="mt-2">Ampika Pratumtong · Statistics · Prince of Songkla University</p>
+        </footer>
 
     </div>
 
@@ -643,16 +657,16 @@
         icon: "📍",
 
         description:
-            "พัฒนาแอปพลิเคชันด้วย AppSheet สำหรับจัดเก็บและบริหารข้อมูลหม้อแปลง รองรับการตรวจสอบและบำรุงรักษา การบันทึกพิกัด GPS การนำทางด้วย Google Maps การสร้างรายงาน PDF และ Dashboard สำหรับสนับสนุนการทำงานภาคสนาม",
+            "พัฒนาแอปพลิเคชันด้วย AppSheet สำหรับจัดเก็บข้อมูลหม้อแปลง การตรวจสอบ และการบำรุงรักษา พร้อมพิกัด GPS การนำทางผ่าน Google Maps แบบฟอร์มภาคสนาม รายงาน PDF และ Dashboard",
 
         objective:
             "พัฒนาแอปพลิเคชันสำหรับจัดเก็บและบริหารจัดการข้อมูลหม้อแปลง การตรวจสอบ และการบำรุงรักษา เพื่อสนับสนุนการปฏิบัติงานภาคสนาม",
 
         methodology:
-            "Data Preparation → Google Sheets → AppSheet → Digital Forms → GPS / Google Maps → Automated PDF Reports → Dashboard",
+            "Data Preparation → Google Sheets → AppSheet → Digital Forms → GPS / Google Maps → PDF Reports → Dashboard",
 
         result:
-            "พัฒนาแอปพลิเคชันที่รองรับการค้นหาข้อมูลหม้อแปลง การบันทึกข้อมูลภาคสนาม การนำทางด้วย GPS การสร้างรายงาน PDF อัตโนมัติ และ Dashboard",
+            "พัฒนาแอปพลิเคชันที่รองรับการค้นหาข้อมูลหม้อแปลง การบันทึกข้อมูลภาคสนาม การนำทาง การสร้างรายงาน PDF และการติดตามข้อมูลผ่าน Dashboard",
 
         technicalDetails: {
             model: "AppSheet Data Management Application",
@@ -683,7 +697,7 @@
         icon: "🤖",
 
         description:
-            "พัฒนาโมเดล Machine Learning เพื่อทำนายว่าลูกค้าธนาคารมีแนวโน้มสมัครเงินฝากประจำหรือไม่ พร้อมเปรียบเทียบ Decision Tree และ Random Forest และวิเคราะห์ปัจจัยที่มีผลต่อการตัดสินใจของลูกค้า",
+            "พัฒนาโมเดล Machine Learning เพื่อทำนายการสมัครเงินฝากประจำ พร้อมเปรียบเทียบ Decision Tree และ Random Forest และวิเคราะห์ตัวแปรที่มีบทบาทต่อการทำนาย",
 
         objective:
             "สร้าง Classification Model เพื่อทำนายว่าลูกค้าธนาคารมีแนวโน้มสมัคร Term Deposit หรือไม่ และเปรียบเทียบประสิทธิภาพของ Decision Tree กับ Random Forest",
@@ -723,7 +737,7 @@
         icon: "🏢",
 
         description:
-            "พัฒนา Web Application สำหรับจัดการข้อมูลอพาร์ตเมนต์ โดยเชื่อมต่อ PHP กับ MySQL เพื่อบริหารข้อมูลห้องพัก ผู้เช่า อัตราค่าน้ำค่าไฟ และบิล พร้อม Dashboard สำหรับสรุปและแสดงผลข้อมูล",
+            "พัฒนา Web Application สำหรับบันทึกและแสดงข้อมูลอพาร์ตเมนต์ โดยเชื่อมต่อ PHP กับ MySQL สำหรับข้อมูลห้องพัก ผู้เช่า อัตราค่าน้ำค่าไฟ และบิล พร้อม Dashboard สำหรับสรุปข้อมูล",
 
         objective:
             "พัฒนาระบบ Web Application สำหรับจัดเก็บและบริหารข้อมูลห้องพัก ผู้เช่า บิล และอัตราค่าน้ำค่าไฟผ่าน Relational Database",
@@ -732,13 +746,13 @@
             "Relational Database Design → MySQL → PHP Backend → SQL Queries → HTML/CSS/JavaScript → Chart.js Dashboard",
 
         result:
-            "พัฒนาระบบจัดการ Room, Customer, Rate และ Bill พร้อม Dashboard สำหรับแสดง KPI กราฟ ตาราง และข้อมูลจาก MySQL",
+            "พัฒนาฟอร์มสำหรับ Room, Customer, Rate และ Bill พร้อม Dashboard ที่ดึงข้อมูลจาก MySQL มาแสดงเป็น KPI กราฟ และตาราง",
 
         technicalDetails: {
             model: "PHP + MySQL Web Application",
-            factor: "CRUD • Database • Dashboard",
+            factor: "Forms • Database • Dashboard",
             insight:
-                "แสดงการเชื่อมต่อ Front-end, PHP Back-end, SQL และ Relational Database เพื่อพัฒนาระบบจัดการข้อมูลแบบครบกระบวนการ"
+                "เชื่อมต่อ Front-end, PHP Back-end, SQL และ Relational Database ตั้งแต่การรับข้อมูลจากฟอร์มจนถึงการแสดงผลบน Dashboard"
         },
 
         tags: [
@@ -812,7 +826,7 @@
             "Data Preparation → Tableau Worksheets → Map → Line Chart → Bar Chart → Donut Chart → Interactive Dashboard → Tableau Public",
 
         result:
-            "พัฒนา Interactive Dashboard 2 หน้าหลัก ได้แก่ Content Overview และ Content Analysis สำหรับสำรวจข้อมูล Netflix ในหลายมิติ",
+            "พัฒนา Interactive Dashboard 2 หน้าหลักสำหรับสำรวจคอนเทนต์ 6,232 รายการ โดยเปรียบเทียบประเภท ประเทศ แนวหนัง Rating นักแสดง ผู้กำกับ และแนวโน้มตามเวลา",
 
         technicalDetails: {
             model: "Tableau Interactive Visual Analytics",
@@ -854,13 +868,13 @@
             "Hourly Time Series → Training/Test Split → Naive → SES → Additive Decomposition → Holt-Winters → Forecast Accuracy Comparison",
 
         result:
-            "Holt-Winters Additive เป็นแบบจำลองที่เหมาะสมที่สุดในชุดข้อมูลที่ศึกษา โดยมี MAE = 39.9590, RMSE = 53.8253 และ Test MAPE ≈ 30.83%",
+            "Holt-Winters Additive ให้ค่าคลาดเคลื่อนต่ำที่สุดบน Training Set (MAE = 39.9590, RMSE = 53.8253) และเมื่อทดสอบกับ Test Set ได้ MAPE ≈ 30.83%",
 
         technicalDetails: {
             model: "Holt-Winters Additive",
             factor: "Hourly Data • Seasonal Period = 24",
             insight:
-                "ผลการวิเคราะห์แสดงให้เห็นถึงความสำคัญของรูปแบบฤดูกาลรายวันในการพยากรณ์ความต้องการใช้ไฟฟ้าแบบรายชั่วโมง"
+                "ข้อมูลมีรูปแบบฤดูกาลรายวันชัดเจน แต่ค่าคลาดเคลื่อนเพิ่มขึ้นบน Test Set จึงควรตีความความแม่นยำของแบบจำลองอย่างระมัดระวัง"
         },
 
         tags: [
@@ -893,13 +907,13 @@
             "Data Preparation → EDA → Outlier Analysis → Correlation Analysis → Multiple Linear Regression → Model Evaluation",
 
         result:
-            "Primary Completion Rate และ Government Expenditure on Education มีความสัมพันธ์เชิงบวกอย่างมีนัยสำคัญกับ Literacy Rate ขณะที่ Out-of-school Children ไม่พบความสัมพันธ์อย่างมีนัยสำคัญที่ระดับ 0.05",
+            "แบบจำลองมี R² = 0.541 โดย Primary Completion Rate และ Government Expenditure on Education มีความสัมพันธ์เชิงบวกอย่างมีนัยสำคัญกับ Literacy Rate ขณะที่ Out-of-school Children มี p = 0.052",
 
         technicalDetails: {
             model: "Multiple Linear Regression",
             factor: "Education Indicators • Literacy Rate",
             insight:
-                "ผลการวิเคราะห์สะท้อนความสัมพันธ์ระหว่างผลลัพธ์และทรัพยากรทางการศึกษากับระดับการรู้หนังสือ โดยควรตีความภายใต้ข้อจำกัดของชุดข้อมูล"
+                "ผลลัพธ์สะท้อนความสัมพันธ์ในข้อมูล ไม่ใช่เหตุและผลโดยตรง และควรพิจารณาข้อจำกัดเรื่อง Missing Data, Outliers และ Multicollinearity บางตัวแปร"
         },
 
         tags: [
@@ -932,13 +946,13 @@
             "Data Standardization → Hierarchical Clustering → K-Means Clustering → Cluster Interpretation → Discriminant Analysis",
 
         result:
-            "K-Means แบ่ง 91 ประเทศออกเป็น 4 กลุ่ม ขนาด 46, 32, 12 และ 1 ประเทศ และนำผลการจัดกลุ่มไปศึกษาต่อด้วย Discriminant Analysis",
+            "Hierarchical Clustering และ K-Means แบ่งข้อมูลออกเป็น 4 กลุ่ม โดย K-Means ได้ขนาด 46, 32, 12 และ 1 ประเทศ และ Discriminant Analysis จำแนกกลุ่มได้ถูกต้องมากกว่า 80%",
 
         technicalDetails: {
             model: "Cluster & Discriminant Analysis",
             factor: "91 Countries • 4 Variables",
             insight:
-                "ประยุกต์ Multivariate Analysis เพื่อค้นหาโครงสร้างความคล้ายคลึงของประเทศและศึกษาการจำแนกกลุ่มจากข้อมูลหลายตัวแปร"
+                "ทั้งสองวิธีให้ 4 กลุ่มแต่มีองค์ประกอบต่างกัน และ GCI_Value กับ GHG_Value เป็นตัวแปรสำคัญในการจำแนกกลุ่ม"
         },
 
         tags: [
@@ -955,7 +969,7 @@
 
     {
         id: 9,
-        title: "Household Income Survey",
+        title: "Household Income Survey of Student-Farmer Families",
         category: "Statistics",
         type: "Sampling & Survey Research Project",
         featured: false,
@@ -1266,12 +1280,13 @@
                 document.getElementById("projects-grid");
 
 
-            const filtered =
+            const filtered = (
                 category === "All"
-                    ? PROJECTS
+                    ? [...PROJECTS]
                     : PROJECTS.filter(
                         project => project.category === category
-                    );
+                    )
+            ).sort((a, b) => Number(b.featured) - Number(a.featured));
 
 
             grid.innerHTML = filtered.map(project => `
@@ -1379,6 +1394,10 @@
 
                             `).join("")}
 
+                        </div>
+
+                        <div class="mt-6 text-blue-400 text-[10px] font-black uppercase tracking-[.2em] group-hover:translate-x-1 transition-transform">
+                            View project details →
                         </div>
 
                     </div>
