@@ -362,9 +362,7 @@
                         </h2>
 
                         <p class="text-slate-400 leading-relaxed max-w-2xl">
-                            เลือกโปรเจกต์เพื่อดู Objective, Methodology, Key Results
-                            และ Technical Approach โดยสามารถเปิด GitHub Repository
-                            เพื่อดูรายละเอียด ไฟล์โปรเจกต์ ภาพผลลัพธ์ หรือรายงานฉบับเต็มได้
+                            เลือกโปรเจกต์เพื่อดูวัตถุประสงค์ วิธีการดำเนินงาน ผลลัพธ์หลัก และแนวทางด้านเทคนิค โดยสามารถเปิด GitHub Repository เพื่อดูรายละเอียด ไฟล์โปรเจกต์ ภาพผลลัพธ์ หรือรายงานฉบับเต็มได้
                         </p>
 
                     </div>
@@ -521,7 +519,7 @@
                             <div>
 
                                 <div class="text-slate-500 text-[10px] font-black uppercase tracking-[.4em] mb-3">
-                                    Technical Approach
+                                    แนวทางด้านเทคนิค (Technical Approach)
                                 </div>
 
                                 <div
@@ -535,7 +533,7 @@
                             <div>
 
                                 <div class="text-slate-500 text-[10px] font-black uppercase tracking-[.4em] mb-3">
-                                    Key Focus
+                                    จุดสำคัญของโปรเจกต์ (Key Focus)
                                 </div>
 
                                 <div
@@ -549,7 +547,7 @@
                             <div class="pt-7 border-t border-white/10">
 
                                 <div class="text-blue-500 text-[10px] font-black uppercase tracking-[.4em] mb-3">
-                                    Final Insight
+                                    ข้อสรุปสำคัญ (Final Insight)
                                 </div>
 
                                 <p
@@ -570,13 +568,11 @@
                         <div class="bg-blue-600/10 border border-blue-500/20 rounded-[2.8rem] p-9 lg:p-11 text-center">
 
                             <h3 class="text-xl font-black mb-4">
-                                Explore the Full Project
+                                ดูรายละเอียดโปรเจกต์เพิ่มเติม
                             </h3>
 
                             <p class="text-slate-400 text-sm leading-relaxed mb-8">
-                                สามารถดูขั้นตอนการวิเคราะห์ ไฟล์โปรเจกต์
-                                ภาพผลลัพธ์ Notebook หรือรายงานเพิ่มเติมได้จาก
-                                GitHub Repository
+                                สามารถดูรายละเอียดขั้นตอนการทำงาน ไฟล์โปรเจกต์ ภาพผลลัพธ์ Notebook หรือรายงานเพิ่มเติมได้จาก GitHub Repository
                             </p>
 
 
@@ -612,7 +608,7 @@
                             onclick="closeDrawer()"
                             class="w-full py-4 glass-card rounded-2xl text-xs font-black uppercase tracking-[.35em]"
                         >
-                            Back to Portfolio
+                            กลับไปที่ Portfolio
                         </button>
 
                     </div>
@@ -636,45 +632,45 @@
            PROJECT DATA
         ====================================================== */
 
-        const PROJECTS = [
+       const PROJECTS = [
 
     {
         id: 1,
-        title: "Azure Real Estate Analytics",
-        category: "Data Engineering",
-        type: "End-to-End Cloud Analytics Project",
+        title: "Transformer Location & Data Management Application",
+        category: "Application",
+        type: "Internship Project",
         featured: true,
-        icon: "☁️",
+        icon: "📍",
 
         description:
-            "พัฒนากระบวนการวิเคราะห์ข้อมูลอสังหาริมทรัพย์แบบ End-to-End บน Microsoft Azure ตั้งแต่การนำเข้าข้อมูล การทำ ETL การวิเคราะห์ด้วย SQL การสร้างโมเดล Machine Learning ไปจนถึงการนำเสนอผลผ่าน Power BI Dashboard",
+            "พัฒนาแอปพลิเคชันด้วย AppSheet สำหรับจัดเก็บและบริหารข้อมูลหม้อแปลง รองรับการตรวจสอบและบำรุงรักษา การบันทึกพิกัด GPS การนำทางด้วย Google Maps การสร้างรายงาน PDF และ Dashboard สำหรับสนับสนุนการทำงานภาคสนาม",
 
         objective:
-            "พัฒนา Workflow สำหรับวิเคราะห์ข้อมูลอสังหาริมทรัพย์ ตั้งแต่การนำเข้าข้อมูล การทำความสะอาดและแปลงข้อมูล การวิเคราะห์ด้วย SQL ไปจนถึงการสร้างโมเดลทำนายราคาและ Dashboard",
+            "พัฒนาแอปพลิเคชันสำหรับจัดเก็บและบริหารจัดการข้อมูลหม้อแปลง การตรวจสอบ และการบำรุงรักษา เพื่อสนับสนุนการปฏิบัติงานภาคสนาม",
 
         methodology:
-            "Azure Data Factory → Data Cleaning & Transformation → Azure Synapse Analytics → SQL Analysis → Azure Machine Learning → Linear Regression → Power BI Dashboard",
+            "Data Preparation → Google Sheets → AppSheet → Digital Forms → GPS / Google Maps → Automated PDF Reports → Dashboard",
 
         result:
-            "Linear Regression Model ให้ค่า MAE = 21.4969, RMSE = 33.2854 และ R² ≈ 0.410 พร้อมสร้างค่าทำนายผ่าน Scored Dataset",
+            "พัฒนาแอปพลิเคชันที่รองรับการค้นหาข้อมูลหม้อแปลง การบันทึกข้อมูลภาคสนาม การนำทางด้วย GPS การสร้างรายงาน PDF อัตโนมัติ และ Dashboard",
 
         technicalDetails: {
-            model: "Azure End-to-End Analytics + Linear Regression",
-            factor: "ETL • SQL • Machine Learning • Power BI",
+            model: "AppSheet Data Management Application",
+            factor: "Data • GPS • Workflow • Dashboard",
             insight:
-                "ข้อมูลแสดงแนวโน้มว่าราคาอสังหาริมทรัพย์โดยทั่วไปลดลงเมื่อระยะทางจากสถานีรถไฟเพิ่มขึ้น โดยโมเดลสามารถอธิบายความแปรปรวนของราคาได้ประมาณ 41%"
+                "รวบรวมข้อมูลทรัพย์สิน การตรวจสอบ และการบำรุงรักษาไว้ในระบบเดียว เพื่อช่วยให้สามารถค้นหา อัปเดต และติดตามข้อมูลสำหรับการปฏิบัติงานภาคสนามได้สะดวกยิ่งขึ้น"
         },
 
         tags: [
-            "Azure Data Factory",
-            "Synapse",
-            "SQL",
-            "Azure ML",
-            "Power BI"
+            "AppSheet",
+            "Google Sheets",
+            "Google Maps",
+            "Dashboard",
+            "Data Management"
         ],
 
         url:
-            "https://github.com/mkampika190647-cpu/azure-real-estate-analytics"
+            "https://github.com/mkampika190647-cpu/transformer-data-management-app"
     },
 
 
@@ -718,47 +714,88 @@
     },
 
 
-   {
-    id: 3,
-    title: "Transformer Location & Data Management Application",
-    category: "Application",
-    type: "Internship Project",
-    featured: true,
-    icon: "📍",
+    {
+        id: 3,
+        title: "Apartment Management & Dashboard System",
+        category: "Web Development",
+        type: "Web Application & Database Project",
+        featured: true,
+        icon: "🏢",
 
-    description:
-        "พัฒนาแอปพลิเคชันด้วย AppSheet สำหรับจัดเก็บและบริหารข้อมูลหม้อแปลง รองรับการตรวจสอบและบำรุงรักษา การบันทึกพิกัด GPS การนำทางด้วย Google Maps การสร้างรายงาน PDF และ Dashboard สำหรับสนับสนุนการทำงานภาคสนาม",
+        description:
+            "พัฒนา Web Application สำหรับจัดการข้อมูลอพาร์ตเมนต์ โดยเชื่อมต่อ PHP กับ MySQL เพื่อบริหารข้อมูลห้องพัก ผู้เช่า อัตราค่าน้ำค่าไฟ และบิล พร้อม Dashboard สำหรับสรุปและแสดงผลข้อมูล",
 
-    objective:
-        "พัฒนาแอปพลิเคชันสำหรับจัดเก็บและบริหารจัดการข้อมูลหม้อแปลง การตรวจสอบ และการบำรุงรักษา เพื่อสนับสนุนการปฏิบัติงานภาคสนาม",
+        objective:
+            "พัฒนาระบบ Web Application สำหรับจัดเก็บและบริหารข้อมูลห้องพัก ผู้เช่า บิล และอัตราค่าน้ำค่าไฟผ่าน Relational Database",
 
-    methodology:
-        "Data Preparation → Google Sheets → AppSheet → Digital Forms → GPS / Google Maps → Automated PDF Reports → Dashboard",
+        methodology:
+            "Relational Database Design → MySQL → PHP Backend → SQL Queries → HTML/CSS/JavaScript → Chart.js Dashboard",
 
-    result:
-        "พัฒนาแอปพลิเคชันที่รองรับการค้นหาข้อมูลหม้อแปลง การบันทึกข้อมูลภาคสนาม การนำทางด้วย GPS การสร้างรายงาน PDF อัตโนมัติ และ Dashboard",
+        result:
+            "พัฒนาระบบจัดการ Room, Customer, Rate และ Bill พร้อม Dashboard สำหรับแสดง KPI กราฟ ตาราง และข้อมูลจาก MySQL",
 
-    technicalDetails: {
-        model: "AppSheet Data Management Application",
-        factor: "Data • GPS • Workflow • Dashboard",
-        insight:
-            "รวบรวมข้อมูลทรัพย์สิน การตรวจสอบ และการบำรุงรักษาไว้ในระบบเดียว เพื่อช่วยให้สามารถค้นหา อัปเดต และติดตามข้อมูลสำหรับการปฏิบัติงานภาคสนามได้สะดวกยิ่งขึ้น"
+        technicalDetails: {
+            model: "PHP + MySQL Web Application",
+            factor: "CRUD • Database • Dashboard",
+            insight:
+                "แสดงการเชื่อมต่อ Front-end, PHP Back-end, SQL และ Relational Database เพื่อพัฒนาระบบจัดการข้อมูลแบบครบกระบวนการ"
+        },
+
+        tags: [
+            "PHP",
+            "MySQL",
+            "SQL",
+            "JavaScript",
+            "Chart.js"
+        ],
+
+        url:
+            "https://github.com/mkampika190647-cpu/web-data-management-dashboard"
     },
 
-    tags: [
-        "AppSheet",
-        "Google Sheets",
-        "Google Maps",
-        "Dashboard",
-        "Data Management"
-    ],
-
-    url:
-        "https://github.com/mkampika190647-cpu/transformer-data-management-app"
-}
 
     {
         id: 4,
+        title: "Azure Real Estate Analytics",
+        category: "Data Engineering",
+        type: "End-to-End Cloud Analytics Project",
+        featured: false,
+        icon: "☁️",
+
+        description:
+            "พัฒนากระบวนการวิเคราะห์ข้อมูลอสังหาริมทรัพย์แบบ End-to-End บน Microsoft Azure ตั้งแต่การนำเข้าข้อมูล การทำ ETL การวิเคราะห์ด้วย SQL การสร้างโมเดล Machine Learning ไปจนถึงการนำเสนอผลผ่าน Power BI Dashboard",
+
+        objective:
+            "พัฒนา Workflow สำหรับวิเคราะห์ข้อมูลอสังหาริมทรัพย์ ตั้งแต่การนำเข้าข้อมูล การทำความสะอาดและแปลงข้อมูล การวิเคราะห์ด้วย SQL ไปจนถึงการสร้างโมเดลทำนายราคาและ Dashboard",
+
+        methodology:
+            "Azure Data Factory → Data Cleaning & Transformation → Azure Synapse Analytics → SQL Analysis → Azure Machine Learning → Linear Regression → Power BI Dashboard",
+
+        result:
+            "Linear Regression Model ให้ค่า MAE = 21.4969, RMSE = 33.2854 และ R² ≈ 0.410 พร้อมสร้างค่าทำนายผ่าน Scored Dataset",
+
+        technicalDetails: {
+            model: "Azure End-to-End Analytics + Linear Regression",
+            factor: "ETL • SQL • Machine Learning • Power BI",
+            insight:
+                "ข้อมูลแสดงแนวโน้มว่าราคาอสังหาริมทรัพย์โดยทั่วไปลดลงเมื่อระยะทางจากสถานีรถไฟเพิ่มขึ้น โดยโมเดลสามารถอธิบายความแปรปรวนของราคาได้ประมาณ 41%"
+        },
+
+        tags: [
+            "Azure Data Factory",
+            "Synapse",
+            "SQL",
+            "Azure ML",
+            "Power BI"
+        ],
+
+        url:
+            "https://github.com/mkampika190647-cpu/azure-real-estate-analytics"
+    },
+
+
+    {
+        id: 5,
         title: "Netflix Content Analysis Dashboard",
         category: "Visualization",
         type: "Tableau Interactive Dashboard Project",
@@ -784,47 +821,18 @@
                 "ออกแบบ Visualization หลายรูปแบบเพื่อช่วยให้ผู้ใช้งานสามารถเปรียบเทียบและสำรวจโครงสร้างของข้อมูล Netflix ได้จาก Dashboard เดียว"
         },
 
-        tags: ["Tableau", "Dashboard", "Visualization", "EDA"],
+        tags: [
+            "Tableau",
+            "Dashboard",
+            "Visualization",
+            "EDA"
+        ],
 
         url:
             "https://github.com/mkampika190647-cpu/netflix-content-analysis-tableau",
 
         liveUrl:
             "https://public.tableau.com/views/NetflixContentAnalysisDashboard_17871701191730/ContentAnalysis?:language=th-TH&publish=yes&:display_count=n&:origin=viz_share_link"
-    },
-
-
-    {
-        id: 5,
-        title: "Apartment Management & Dashboard System",
-        category: "Web Development",
-        type: "Web Application & Database Project",
-        featured: false,
-        icon: "🗄️",
-
-        description:
-            "พัฒนา Web Application สำหรับจัดการข้อมูลอพาร์ตเมนต์ โดยเชื่อมต่อ PHP กับ MySQL เพื่อบริหารข้อมูลห้องพัก ผู้เช่า อัตราค่าน้ำค่าไฟ และบิล พร้อม Dashboard สำหรับสรุปและแสดงผลข้อมูล",
-
-        objective:
-            "พัฒนาระบบ Web Application สำหรับจัดเก็บและบริหารข้อมูลห้องพัก ผู้เช่า บิล และอัตราค่าน้ำค่าไฟผ่าน Relational Database",
-
-        methodology:
-            "Relational Database Design → MySQL → PHP Backend → SQL Queries → HTML/CSS/JavaScript → Chart.js Dashboard",
-
-        result:
-            "พัฒนาระบบจัดการ Room, Customer, Rate และ Bill พร้อม Dashboard สำหรับแสดง KPI กราฟ ตาราง และข้อมูลจาก MySQL",
-
-        technicalDetails: {
-            model: "PHP + MySQL Web Application",
-            factor: "CRUD • Database • Dashboard",
-            insight:
-                "แสดงการเชื่อมต่อ Front-end, PHP Back-end, SQL และ Relational Database เพื่อพัฒนาระบบจัดการข้อมูลแบบครบกระบวนการ"
-        },
-
-        tags: ["PHP", "MySQL", "SQL", "JavaScript", "Chart.js"],
-
-        url:
-            "https://github.com/mkampika190647-cpu/web-data-management-dashboard"
     },
 
 
@@ -855,7 +863,12 @@
                 "ผลการวิเคราะห์แสดงให้เห็นถึงความสำคัญของรูปแบบฤดูกาลรายวันในการพยากรณ์ความต้องการใช้ไฟฟ้าแบบรายชั่วโมง"
         },
 
-        tags: ["Time Series", "Forecasting", "Minitab", "Excel"],
+        tags: [
+            "Time Series",
+            "Forecasting",
+            "Minitab",
+            "Excel"
+        ],
 
         url:
             "https://github.com/mkampika190647-cpu/electricity-demand-forecasting"
@@ -889,7 +902,12 @@
                 "ผลการวิเคราะห์สะท้อนความสัมพันธ์ระหว่างผลลัพธ์และทรัพยากรทางการศึกษากับระดับการรู้หนังสือ โดยควรตีความภายใต้ข้อจำกัดของชุดข้อมูล"
         },
 
-        tags: ["Regression", "Python", "RapidMiner", "Statistics"],
+        tags: [
+            "Regression",
+            "Python",
+            "RapidMiner",
+            "Statistics"
+        ],
 
         url:
             "https://github.com/mkampika190647-cpu/global-literacy-rate-analysis"
@@ -923,7 +941,12 @@
                 "ประยุกต์ Multivariate Analysis เพื่อค้นหาโครงสร้างความคล้ายคลึงของประเทศและศึกษาการจำแนกกลุ่มจากข้อมูลหลายตัวแปร"
         },
 
-        tags: ["R", "K-Means", "Clustering", "Discriminant"],
+        tags: [
+            "R",
+            "K-Means",
+            "Clustering",
+            "Discriminant"
+        ],
 
         url:
             "https://github.com/mkampika190647-cpu/multivariate-environment-transport-analysis"
@@ -957,7 +980,12 @@
                 "แสดงการประยุกต์ Sampling Design และ Statistical Estimation ตั้งแต่การออกแบบตัวอย่าง การเก็บข้อมูล จนถึงการประเมินความแม่นยำของค่าประมาณ"
         },
 
-        tags: ["Sampling", "Survey", "Excel", "Google Forms"],
+        tags: [
+            "Sampling",
+            "Survey",
+            "Excel",
+            "Google Forms"
+        ],
 
         url:
             "https://github.com/mkampika190647-cpu/household-income-survey"
@@ -991,14 +1019,18 @@
                 "แสดงการนำกฎการคำนวณและ Business Rules มาแปลงเป็น Algorithm และ Conditional Logic ในโปรแกรม Python"
         },
 
-        tags: ["Python", "Google Colab", "Algorithm", "Programming"],
+        tags: [
+            "Python",
+            "Google Colab",
+            "Algorithm",
+            "Programming"
+        ],
 
         url:
             "https://github.com/mkampika190647-cpu/electricity-billing-calculator"
     }
 
 ];
-
 
         /* =====================================================
            SKILLS
@@ -1121,14 +1153,14 @@
                     "Internship",
 
                 description:
-                    "Supported transformer asset data management and digital workflows for inspection, maintenance, and field operations.",
+                    "สนับสนุนการจัดการข้อมูลทรัพย์สินหม้อแปลงและพัฒนา Workflow ดิจิทัลสำหรับงานตรวจสอบ บำรุงรักษา และการปฏิบัติงานภาคสนาม",
 
                 bullets: [
-                    "Organized and maintained transformer asset, inspection, and maintenance data using Google Sheets.",
-                    "Developed an AppSheet-based data management application for transformer information.",
-                    "Integrated GPS location tracking and Google Maps navigation for field operations.",
-                    "Developed digital inspection and maintenance forms.",
-                    "Implemented automated PDF reporting and dashboard functionality."
+                    "จัดระเบียบ ตรวจสอบ และดูแลข้อมูลหม้อแปลง ข้อมูลการตรวจสอบ และข้อมูลการบำรุงรักษาด้วย Google Sheets",
+                    "พัฒนาแอปพลิเคชันจัดการข้อมูลหม้อแปลงด้วย AppSheet",
+                    "เชื่อมโยงพิกัด GPS และการนำทางด้วย Google Maps เพื่อสนับสนุนการปฏิบัติงานภาคสนาม",
+                    "พัฒนาแบบฟอร์มดิจิทัลสำหรับบันทึกข้อมูลการตรวจสอบและการบำรุงรักษา",
+                    "พัฒนาระบบสร้างรายงาน PDF อัตโนมัติและ Dashboard สำหรับติดตามข้อมูล"
                 ]
             },
 
@@ -1143,14 +1175,14 @@
                     "Field Research",
 
                 description:
-                    "Supported structured field data collection and survey quality-control processes.",
+                    "สนับสนุนการเก็บข้อมูลภาคสนามตามแบบสอบถามที่มีโครงสร้าง พร้อมตรวจสอบคุณภาพและความครบถ้วนของข้อมูล",
 
                 bullets: [
-                    "Conducted structured face-to-face interviews based on predefined research requirements.",
-                    "Applied quota sampling criteria and screened respondents for eligibility.",
-                    "Validated survey responses for completeness and accuracy.",
-                    "Collaborated with supervisors to meet fieldwork targets.",
-                    "Maintained research ethics, respondent confidentiality, and data quality."
+                    "ดำเนินการสัมภาษณ์แบบตัวต่อตัวตามแบบสอบถามและเกณฑ์ที่กำหนดในโครงการวิจัย",
+                    "คัดกรองผู้ตอบแบบสอบถามตามเกณฑ์และสัดส่วนตัวอย่างที่กำหนด",
+                    "ตรวจสอบความครบถ้วนและความถูกต้องของคำตอบก่อนส่งข้อมูลเข้าสู่ขั้นตอนประมวลผล",
+                    "ประสานงานกับผู้ควบคุมงานเพื่อให้การเก็บข้อมูลเป็นไปตามเป้าหมายของโครงการ",
+                    "ปฏิบัติตามจริยธรรมการวิจัย รักษาความลับของผู้ให้ข้อมูล และควบคุมคุณภาพข้อมูล"
                 ]
             }
 
