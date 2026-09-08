@@ -3,57 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
     <title>AMPIKA PRATUMTONG | Data Analyst Portfolio</title>
-
+ 
     <script src="https://cdn.tailwindcss.com"></script>
-
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+ 
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
-
+ 
     <style>
         :root {
             --primary: #3b82f6;
             --accent: #60a5fa;
             --bg: #020617;
         }
-
+ 
         html {
             scroll-behavior: smooth;
         }
-
+ 
         body {
             margin: 0;
             font-family: "Plus Jakarta Sans", "IBM Plex Sans Thai", sans-serif;
             background-color: var(--bg);
             color: #f1f5f9;
         }
-
+ 
         .ambient-mesh {
             background-image:
                 radial-gradient(circle at 0% 0%, rgba(59,130,246,.15), transparent 40%),
                 radial-gradient(circle at 100% 100%, rgba(37,99,235,.11), transparent 40%);
         }
-
+ 
         .glass-card {
             background: rgba(255,255,255,.018);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255,255,255,.06);
             transition: .45s cubic-bezier(.23,1,.32,1);
         }
-
+ 
         .glass-card:hover {
             background: rgba(255,255,255,.04);
             border-color: rgba(59,130,246,.38);
             transform: translateY(-7px);
             box-shadow: 0 28px 60px -20px rgba(0,0,0,.65);
         }
-
+ 
         .featured-card {
             border: 1px solid rgba(59,130,246,.5);
             background:
@@ -64,30 +64,30 @@
                 );
             box-shadow: 0 0 35px rgba(59,130,246,.11);
         }
-
+ 
         .text-gradient {
             background: linear-gradient(135deg,#fff 35%,#94a3b8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
+ 
         .drawer-transition {
             transition: transform .65s cubic-bezier(.19,1,.22,1);
         }
-
+ 
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
-
+ 
         .no-scrollbar {
             scrollbar-width: none;
         }
-
+ 
         .shine-effect {
             position: relative;
             overflow: hidden;
         }
-
+ 
         .shine-effect::after {
             content: "";
             position: absolute;
@@ -105,45 +105,45 @@
             transition: .9s;
             pointer-events: none;
         }
-
+ 
         .shine-effect:hover::after {
             left: 100%;
         }
-
+ 
         @keyframes float {
             0%,100% {
                 transform: translateY(0);
             }
-
+ 
             50% {
                 transform: translateY(-10px);
             }
         }
-
+ 
         .animate-float {
             animation: float 5.5s ease-in-out infinite;
         }
-
+ 
         @keyframes revealUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
-
+ 
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
+ 
         .reveal-up {
             animation: revealUp .9s cubic-bezier(.16,1,.3,1) both;
         }
     </style>
 </head>
-
+ 
 <body class="overflow-x-hidden ambient-mesh min-h-screen">
-
+ 
     <!-- Navigation -->
     <nav class="fixed top-4 left-1/2 -translate-x-1/2 z-[90] w-[calc(100%-2rem)] max-w-5xl">
         <div class="glass-card rounded-2xl px-4 sm:px-6 py-3 flex items-center justify-between shadow-2xl">
@@ -156,43 +156,43 @@
             </div>
         </div>
     </nav>
-
+ 
     <!-- Background -->
     <div class="fixed inset-0 pointer-events-none -z-10">
         <div class="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-blue-600/10 blur-[150px] rounded-full"></div>
         <div class="absolute bottom-1/4 -right-32 w-[600px] h-[600px] bg-cyan-400/10 blur-[150px] rounded-full"></div>
     </div>
-
-
+ 
+ 
     <!-- =====================================================
          MAIN CONTENT
     ====================================================== -->
     <div id="main-content" class="relative z-10 transition-all duration-700">
-
+ 
         <!-- =================================================
              HERO
         ================================================== -->
         <header id="top" class="pt-32 lg:pt-36 pb-20 px-6 max-w-7xl mx-auto">
-
+ 
             <div class="flex flex-col lg:flex-row items-center gap-14 lg:gap-20">
-
+ 
                 <!-- Profile -->
                 <div class="relative shrink-0 reveal-up">
-
+ 
                     <div class="absolute -inset-2 bg-gradient-to-tr from-blue-600 to-cyan-400 rounded-[3.5rem] blur-2xl opacity-25"></div>
-
+ 
                     <div class="relative w-64 h-64 lg:w-80 lg:h-80 rounded-[3.5rem] bg-slate-900 border-2 border-white/10 overflow-hidden shadow-2xl">
-
+ 
                         <img
                             src="https://raw.githubusercontent.com/mkampika190647-cpu/image/main/profile.jpg"
                             alt="Ampika Pratumtong"
                             class="w-full h-full object-cover"
                         >
-
+ 
                     </div>
-
+ 
                     <div class="absolute -bottom-5 -right-5 bg-blue-600 p-5 rounded-[2rem] shadow-2xl border-4 border-[#020617] animate-float">
-
+ 
                         <svg
                             class="w-7 h-7 text-white"
                             fill="none"
@@ -206,44 +206,44 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                             />
                         </svg>
-
+ 
                     </div>
                 </div>
-
-
+ 
+ 
                 <!-- Intro -->
                 <div
                     class="flex-grow text-center lg:text-left reveal-up"
                     style="animation-delay:.12s"
                 >
-
+ 
                     <div class="inline-flex items-center px-5 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[11px] font-black uppercase tracking-[.25em] mb-8">
-
+ 
                         Data Analytics&nbsp; • &nbsp;Database&nbsp; • &nbsp;Application Development
-
+ 
                     </div>
-
+ 
                     <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-gradient leading-[.9] uppercase italic">
-
+ 
                         AMPIKA
                         <br>
                         PRATUMTONG
-
+ 
                     </h1>
-
+ 
                     <p class="text-lg md:text-xl text-slate-300 font-medium mb-10 max-w-3xl leading-relaxed border-l-4 border-blue-600/40 pl-6 mx-auto lg:mx-0">
-
+ 
                         Statistics student with hands-on experience in data analytics, machine learning,
                         databases, dashboards, and data-driven applications through academic projects
                         and internship work. I am interested in using data and technology to build
                         practical solutions and support better decision-making.
-
+ 
                     </p>
-
-
+ 
+ 
                     <!-- CTA -->
                     <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-
+ 
                         <a
                             href="https://github.com/mkampika190647-cpu"
                             target="_blank"
@@ -257,10 +257,10 @@
                             >
                                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                             </svg>
-
+ 
                             GitHub Profile
                         </a>
-
+ 
                         <a
                             id="resume-download-link"
                             href="#"
@@ -272,209 +272,209 @@
                             </svg>
                             Download Resume
                         </a>
-
+ 
                         <a
                             href="mailto:Ampika.pratumtong47@gmail.com"
                             class="px-7 py-4 bg-blue-600 rounded-2xl font-black text-xs tracking-[.1em] hover:bg-blue-500 transition"
                         >
                             Ampika.pratumtong47@gmail.com
                         </a>
-
-
+ 
+ 
                         <a
                             href="tel:0922752709"
                             class="px-7 py-4 glass-card rounded-2xl font-black text-xs tracking-[.1em]"
                         >
                             092-275-2709
                         </a>
-
+ 
                     </div>
-
+ 
                     <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-2 text-[10px] font-black uppercase tracking-[.16em] text-slate-500">
                         <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">Data Analytics</span>
                         <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">Machine Learning</span>
                         <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">SQL & Database</span>
                         <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">Data Applications</span>
                     </div>
-
+ 
                 </div>
-
+ 
             </div>
-
+ 
         </header>
-
-
-
+ 
+ 
+ 
         <main class="max-w-7xl mx-auto px-6 space-y-28 pb-40">
-
-
+ 
+ 
             <!-- =================================================
                  ABOUT + EDUCATION
             ================================================== -->
             <section id="about" class="grid grid-cols-1 lg:grid-cols-12 gap-8 reveal-up scroll-mt-28">
-
+ 
                 <!-- About -->
                 <div class="lg:col-span-7 glass-card rounded-[3.5rem] p-10 lg:p-12">
-
+ 
                     <div class="text-blue-500 font-black text-[10px] uppercase tracking-[.5em] mb-6">
                         About Me
                     </div>
-
+ 
                     <h2 class="text-3xl lg:text-4xl font-black tracking-tight mb-7">
                         Data, Analytics & Practical Systems
                     </h2>
-
+ 
                     <p class="text-slate-400 text-lg leading-relaxed">
                         I study Statistics and have worked on projects involving data analysis, machine learning,
                         SQL and databases, dashboards, forecasting, and application development.
                         I am most interested in work that combines analytical thinking with technology,
                         especially data-driven systems that can be used in real work.
                     </p>
-
+ 
                 </div>
-
-
+ 
+ 
                 <!-- Education -->
                 <div class="lg:col-span-5 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-950 rounded-[3.5rem] p-10 lg:p-12 shadow-2xl">
-
+ 
                     <div class="text-blue-100 font-black text-[10px] uppercase tracking-[.5em] mb-8 opacity-80">
                         Education
                     </div>
-
+ 
                     <h3 class="text-3xl font-black mb-3">
                         Prince of Songkla University
                     </h3>
-
+ 
                     <p class="text-blue-100/80 text-sm font-bold uppercase tracking-widest mb-8">
                         Faculty of Science • Statistics
                     </p>
-
+ 
                     <div class="flex items-end gap-4">
-
+ 
                         <div class="text-7xl font-black tracking-tighter">
                             3.22
                         </div>
-
+ 
                         <div class="pb-2 text-blue-100 text-xs font-black uppercase tracking-widest">
                             Cumulative GPA
                         </div>
-
+ 
                     </div>
-
+ 
                     <div class="mt-8 pt-7 border-t border-white/15 text-sm text-blue-50/80 leading-relaxed">
                         B.Sc. Statistics • Hat Yai Campus • 2023 – Present
                     </div>
-
+ 
                 </div>
-
+ 
             </section>
-
-
-
+ 
+ 
+ 
             <!-- =================================================
                  PROJECTS
             ================================================== -->
             <section id="projects" class="scroll-mt-20">
-
+ 
                 <div class="flex flex-col xl:flex-row xl:items-end justify-between gap-10 mb-14">
-
+ 
                     <div class="max-w-3xl">
-
+ 
                         <div class="text-blue-500 font-black text-[11px] uppercase tracking-[.55em] mb-5">
                             Selected Work
                         </div>
-
+ 
                         <h2 class="text-5xl lg:text-7xl font-black uppercase italic tracking-tighter leading-none mb-8">
                             Projects
                         </h2>
-
+ 
                         <p class="text-slate-400 leading-relaxed max-w-2xl">
                             โปรเจกต์ที่คัดเลือกเน้น Data Analytics, Machine Learning, Database และ Application Development โดยมีงานด้าน Statistics, Forecasting และ Data Visualization เป็นพื้นฐานเสริม กดที่การ์ดเพื่อดูวิธีการทำงาน ผลลัพธ์ และ GitHub Repository
                         </p>
-
+ 
                     </div>
-
-
+ 
+ 
                     <div
                         id="category-filters"
                         class="flex gap-2 overflow-x-auto no-scrollbar p-2 glass-card rounded-[2rem]"
                     ></div>
-
+ 
                 </div>
-
-
+ 
+ 
                 <div
                     id="projects-grid"
                     class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 min-h-[400px]"
                 ></div>
-
+ 
             </section>
-
-
-
+ 
+ 
+ 
             <!-- =================================================
                  SKILLS
             ================================================== -->
             <section id="skills">
-
+ 
                 <div class="text-center mb-14">
-
+ 
                     <div class="text-blue-500 font-black text-[11px] uppercase tracking-[.55em] mb-4">
                         Technical Skills
                     </div>
-
+ 
                     <h2 class="text-4xl lg:text-6xl font-black tracking-tighter uppercase italic">
                         Skills & Technologies
                     </h2>
-
+ 
                 </div>
-
-
+ 
+ 
                 <div
                     id="skills-container"
                     class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7"
                 ></div>
-
+ 
             </section>
-
-
-
+ 
+ 
+ 
             <!-- =================================================
                  EXPERIENCE
             ================================================== -->
             <section id="experience">
-
+ 
                 <div class="mb-12">
-
+ 
                     <div class="text-blue-500 font-black text-[11px] uppercase tracking-[.55em] mb-4">
                         Professional Background
                     </div>
-
+ 
                     <h2 class="text-4xl lg:text-6xl font-black tracking-tighter uppercase italic">
                         Work Experience
                     </h2>
-
+ 
                 </div>
-
-
+ 
+ 
                 <div
                     id="experience-container"
                     class="space-y-8"
                 ></div>
-
+ 
             </section>
-
+ 
         </main>
-
+ 
         <footer class="border-t border-white/5 py-10 px-6 text-center text-slate-500 text-xs">
             <p>Selected academic and internship projects in data analytics, statistics, and technology.</p>
             <p class="mt-2">Ampika Pratumtong · Statistics · Prince of Songkla University</p>
         </footer>
-
+ 
     </div>
-
-
-
+ 
+ 
+ 
     <!-- =====================================================
          PROJECT DRAWER
     ====================================================== -->
@@ -482,134 +482,134 @@
         id="side-drawer"
         class="fixed top-0 right-0 h-screen w-full bg-[#020617] z-[100] drawer-transition translate-x-full flex flex-col"
     >
-
+ 
         <!-- Header -->
         <div class="p-6 lg:p-8 border-b border-white/5 flex items-center justify-between">
-
+ 
             <div class="flex items-center gap-5">
-
+ 
                 <button
                     onclick="closeDrawer()"
                     class="p-3 bg-white/5 rounded-xl hover:bg-blue-600 transition"
                 >
                     ←
                 </button>
-
-
+ 
+ 
                 <div>
-
+ 
                     <span
                         id="drawer-category"
                         class="text-blue-500 font-black text-[10px] uppercase tracking-[.4em]"
                     ></span>
-
+ 
                     <h2
                         id="drawer-title"
                         class="text-2xl lg:text-4xl font-black text-white tracking-tight uppercase italic mt-1"
                     ></h2>
-
+ 
                     <p
                         id="drawer-type"
                         class="text-slate-500 text-xs font-bold mt-2"
                     ></p>
-
+ 
                 </div>
-
+ 
             </div>
-
-
+ 
+ 
             <button
                 onclick="closeDrawer()"
                 class="text-slate-500 hover:text-white text-3xl"
             >
                 ×
             </button>
-
+ 
         </div>
-
-
+ 
+ 
         <!-- Content -->
         <div class="flex-grow overflow-y-auto no-scrollbar p-6 lg:p-14">
-
+ 
             <div class="max-w-7xl mx-auto space-y-10">
-
-
+ 
+ 
                 <!-- 3 cards -->
                 <div
                     id="drawer-description-grid"
                     class="grid grid-cols-1 lg:grid-cols-3 gap-6"
                 ></div>
-
-
+ 
+ 
                 <!-- Technical -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
-
+ 
                     <div class="glass-card rounded-[2.8rem] p-9 lg:p-11">
-
+ 
                         <div class="space-y-9">
-
+ 
                             <div>
-
+ 
                                 <div class="text-slate-500 text-[10px] font-black uppercase tracking-[.4em] mb-3">
                                     แนวทางด้านเทคนิค (Technical Approach)
                                 </div>
-
+ 
                                 <div
                                     id="drawer-model"
                                     class="text-xl lg:text-2xl font-black"
                                 ></div>
-
+ 
                             </div>
-
-
+ 
+ 
                             <div>
-
+ 
                                 <div class="text-slate-500 text-[10px] font-black uppercase tracking-[.4em] mb-3">
                                     จุดสำคัญของโปรเจกต์ (Key Focus)
                                 </div>
-
+ 
                                 <div
                                     id="drawer-factor"
                                     class="text-xl lg:text-2xl font-black text-emerald-400"
                                 ></div>
-
+ 
                             </div>
-
-
+ 
+ 
                             <div class="pt-7 border-t border-white/10">
-
+ 
                                 <div class="text-blue-500 text-[10px] font-black uppercase tracking-[.4em] mb-3">
                                     ข้อสรุปสำคัญ (Final Insight)
                                 </div>
-
+ 
                                 <p
                                     id="drawer-insight"
                                     class="text-slate-300 leading-relaxed"
                                 ></p>
-
+ 
                             </div>
-
+ 
                         </div>
-
+ 
                     </div>
-
-
+ 
+ 
                     <!-- Links -->
                     <div class="flex flex-col justify-center gap-5">
-
+ 
                         <div class="bg-blue-600/10 border border-blue-500/20 rounded-[2.8rem] p-9 lg:p-11 text-center">
-
+ 
                             <h3 class="text-xl font-black mb-4">
                                 ดูรายละเอียดโปรเจกต์เพิ่มเติม
                             </h3>
-
+ 
                             <p class="text-slate-400 text-sm leading-relaxed mb-8">
                                 สามารถดูรายละเอียดขั้นตอนการทำงาน ไฟล์โปรเจกต์ ภาพผลลัพธ์ Notebook หรือรายงานเพิ่มเติมได้จาก GitHub Repository
                             </p>
-
-
+ 
+ 
                             <div class="flex flex-col sm:flex-row justify-center gap-4">
-
+ 
                                 <a
                                     id="github-link"
                                     href="#"
@@ -619,8 +619,8 @@
                                 >
                                     GitHub Repository
                                 </a>
-
-
+ 
+ 
                                 <a
                                     id="live-link"
                                     href="#"
@@ -630,48 +630,48 @@
                                 >
                                     Live Dashboard
                                 </a>
-
+ 
                             </div>
-
+ 
                         </div>
-
-
+ 
+ 
                         <button
                             onclick="closeDrawer()"
                             class="w-full py-4 glass-card rounded-2xl text-xs font-black uppercase tracking-[.35em]"
                         >
                             กลับไปที่ Portfolio
                         </button>
-
+ 
                     </div>
-
+ 
                 </div>
-
+ 
             </div>
-
+ 
         </div>
-
+ 
     </div>
-
-
-
+ 
+ 
+ 
     <!-- =====================================================
          JAVASCRIPT
     ====================================================== -->
     <script>
-
+ 
         /* =====================================================
            RESUME PDF LINK
            TODO: replace this URL with the hosted resume PDF link
         ====================================================== */
         document.getElementById("resume-download-link").href = "Ampika_Pratumtong_Resume.pdf";
-
+ 
         /* =====================================================
            PROJECT DATA
         ====================================================== */
-
+ 
        const PROJECTS = [
-
+ 
     {
         id: 1,
         title: "Transformer Location & Data Management Application",
@@ -680,26 +680,26 @@
         featured: true,
         featuredRank: 1,
         icon: "📍",
-
+ 
         description:
             "พัฒนาแอปพลิเคชันด้วย AppSheet สำหรับจัดเก็บข้อมูลหม้อแปลง การตรวจสอบ และการบำรุงรักษา พร้อมพิกัด GPS การนำทางผ่าน Google Maps แบบฟอร์มภาคสนาม รายงาน PDF และ Dashboard",
-
+ 
         objective:
             "พัฒนาแอปพลิเคชันสำหรับจัดเก็บและบริหารจัดการข้อมูลหม้อแปลง การตรวจสอบ และการบำรุงรักษา เพื่อสนับสนุนการปฏิบัติงานภาคสนาม",
-
+ 
         methodology:
             "Data Preparation → Google Sheets → AppSheet → Digital Forms → GPS / Google Maps → PDF Reports → Dashboard",
-
+ 
         result:
             "พัฒนาแอปพลิเคชันที่รองรับการค้นหาข้อมูลหม้อแปลง การบันทึกข้อมูลภาคสนาม การนำทาง การสร้างรายงาน PDF และการติดตามข้อมูลผ่าน Dashboard",
-
+ 
         technicalDetails: {
             model: "AppSheet Data Management Application",
             factor: "Data • GPS • Workflow • Dashboard",
             insight:
                 "รวบรวมข้อมูลทรัพย์สิน การตรวจสอบ และการบำรุงรักษาไว้ในระบบเดียว ช่วยให้ค้นหา อัปเดต และติดตามข้อมูลภาคสนามได้สะดวกขึ้น"
         },
-
+ 
         tags: [
             "AppSheet",
             "Google Sheets",
@@ -707,12 +707,12 @@
             "Dashboard",
             "Data Management"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/transformer-data-management-app"
     },
-
-
+ 
+ 
     {
         id: 2,
         title: "Term Deposit Subscription Prediction",
@@ -721,26 +721,26 @@
         featured: true,
         featuredRank: 2,
         icon: "🤖",
-
+ 
         description:
             "พัฒนาโมเดล Machine Learning เพื่อทำนายการสมัครเงินฝากประจำ พร้อมเปรียบเทียบ Decision Tree และ Random Forest และวิเคราะห์ตัวแปรที่มีบทบาทต่อการทำนาย",
-
+ 
         objective:
             "สร้าง Classification Model เพื่อทำนายว่าลูกค้าธนาคารมีแนวโน้มสมัคร Term Deposit หรือไม่ และเปรียบเทียบประสิทธิภาพของ Decision Tree กับ Random Forest",
-
+ 
         methodology:
             "Data Cleaning → EDA → Categorical Encoding → Stratified Train/Test Split → Decision Tree → Random Forest → Model Evaluation → Feature Importance",
-
+ 
         result:
             "เลือก Decision Tree เป็น Final Model โดยมี Accuracy 78.48%, Precision 31.62%, Recall 75.00% และ F1-Score 44.49%",
-
+ 
         technicalDetails: {
             model: "Decision Tree Classifier",
             factor: "Recall 75% • Class Imbalance",
             insight:
                 "ตัวแปร duration มี Feature Importance สูงสุด (~0.53) แต่ใช้ทำนายก่อนติดต่อจริงไม่ได้ เพราะทราบค่านี้หลังการโทรเกิดขึ้นแล้ว"
         },
-
+ 
         tags: [
             "Python",
             "Decision Tree",
@@ -748,12 +748,12 @@
             "Scikit-learn",
             "Machine Learning"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/term-deposit-subscription-prediction"
     },
-
-
+ 
+ 
     {
         id: 3,
         title: "Apartment Management & Dashboard System",
@@ -762,26 +762,26 @@
         featured: true,
         featuredRank: 3,
         icon: "🏢",
-
+ 
         description:
             "พัฒนา Web Application สำหรับบันทึกและแสดงข้อมูลอพาร์ตเมนต์ โดยเชื่อมต่อ PHP กับ MySQL สำหรับข้อมูลห้องพัก ผู้เช่า อัตราค่าน้ำค่าไฟ และบิล พร้อม Dashboard สำหรับสรุปข้อมูล",
-
+ 
         objective:
             "พัฒนาระบบ Web Application สำหรับจัดเก็บและบริหารข้อมูลห้องพัก ผู้เช่า บิล และอัตราค่าน้ำค่าไฟผ่าน Relational Database",
-
+ 
         methodology:
             "Relational Database Design → MySQL → PHP Backend → SQL Queries → HTML/CSS/JavaScript → Chart.js Dashboard",
-
+ 
         result:
             "พัฒนาฟอร์มสำหรับ Room, Customer, Rate และ Bill พร้อม Dashboard ที่ดึงข้อมูลจาก MySQL มาแสดงเป็น KPI กราฟ และตาราง",
-
+ 
         technicalDetails: {
             model: "PHP + MySQL Web Application",
             factor: "Forms • Database • Dashboard",
             insight:
                 "เชื่อมต่อ Front-end, PHP Back-end, SQL และ Relational Database ตั้งแต่รับข้อมูลจากฟอร์มจนถึงแสดงผลบน Dashboard"
         },
-
+ 
         tags: [
             "PHP",
             "MySQL",
@@ -789,12 +789,12 @@
             "JavaScript",
             "Chart.js"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/web-data-management-dashboard"
     },
-
-
+ 
+ 
     {
         id: 4,
         title: "Azure Real Estate Analytics",
@@ -802,26 +802,26 @@
         type: "End-to-End Cloud Analytics Project",
         featured: false,
         icon: "☁️",
-
+ 
         description:
             "วิเคราะห์ข้อมูลอสังหาริมทรัพย์แบบ End-to-End บน Microsoft Azure ตั้งแต่ ETL การวิเคราะห์ด้วย SQL ไปจนถึงสร้างโมเดล Machine Learning และแสดงผลผ่าน Power BI Dashboard",
-
+ 
         objective:
             "พัฒนา Workflow วิเคราะห์ข้อมูลอสังหาริมทรัพย์ ตั้งแต่นำเข้าและทำความสะอาดข้อมูล วิเคราะห์ด้วย SQL ไปจนถึงสร้างโมเดลทำนายราคาและ Dashboard",
-
+ 
         methodology:
             "Azure Data Factory → Data Cleaning & Transformation → Azure Synapse Analytics → SQL Analysis → Azure Machine Learning → Linear Regression → Power BI Dashboard",
-
+ 
         result:
             "Linear Regression Model ให้ค่า MAE = 21.4969, RMSE = 33.2854 และ R² ≈ 0.410 พร้อมสร้างค่าทำนายผ่าน Scored Dataset",
-
+ 
         technicalDetails: {
             model: "Azure End-to-End Analytics + Linear Regression",
             factor: "ETL • SQL • Machine Learning • Power BI",
             insight:
                 "ราคาอสังหาริมทรัพย์มีแนวโน้มลดลงเมื่อระยะทางจากสถานีรถไฟเพิ่มขึ้น โมเดลอธิบายความแปรปรวนได้ราว 41% ซึ่งบ่งชี้ว่ายังมีปัจจัยอื่นที่ตัวแปรชุดนี้ยังไม่ครอบคลุม"
         },
-
+ 
         tags: [
             "Azure Data Factory",
             "Synapse",
@@ -829,12 +829,12 @@
             "Azure ML",
             "Power BI"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/azure-real-estate-analytics"
     },
-
-
+ 
+ 
     {
         id: 5,
         title: "Netflix Content Analysis Dashboard",
@@ -843,40 +843,40 @@
         featured: true,
         featuredRank: 5,
         icon: "📊",
-
+ 
         description:
             "สร้าง Interactive Dashboard ด้วย Tableau วิเคราะห์คอนเทนต์ Netflix หลายมิติ เช่น ประเทศ ประเภทคอนเทนต์ แนวหนัง นักแสดง ผู้กำกับ และแนวโน้มตามช่วงเวลา",
-
+ 
         objective:
             "วิเคราะห์และนำเสนอข้อมูลคอนเทนต์ Netflix เพื่อสำรวจประเภทคอนเทนต์ ประเทศ แนวหนัง กลุ่มผู้ชม นักแสดง ผู้กำกับ และแนวโน้มตามช่วงเวลา",
-
+ 
         methodology:
             "Data Preparation → Tableau Worksheets → Map → Line Chart → Bar Chart → Donut Chart → Interactive Dashboard → Tableau Public",
-
+ 
         result:
             "พัฒนา Interactive Dashboard 2 หน้าหลักสำหรับสำรวจคอนเทนต์ 6,232 รายการ โดยเปรียบเทียบประเภท ประเทศ แนวหนัง Rating นักแสดง ผู้กำกับ และแนวโน้มตามเวลา",
-
+ 
         technicalDetails: {
             model: "Tableau Interactive Visual Analytics",
             factor: "Content • Country • Genre • Trends",
             insight:
                 "ออกแบบ Visualization หลายรูปแบบให้ผู้ใช้เปรียบเทียบและสำรวจโครงสร้างข้อมูล Netflix ได้จาก Dashboard เดียว"
         },
-
+ 
         tags: [
             "Tableau",
             "Data Analysis",
             "Interactive Dashboard"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/netflix-content-analysis-tableau",
-
+ 
         liveUrl:
             "https://public.tableau.com/views/NetflixContentAnalysisDashboard_17871701191730/ContentAnalysis?:language=th-TH&publish=yes&:display_count=n&:origin=viz_share_link"
     },
-
-
+ 
+ 
     {
         id: 6,
         title: "Electricity Demand Forecasting in Southern Thailand",
@@ -885,37 +885,37 @@
         featured: true,
         featuredRank: 4,
         icon: "⚡",
-
+ 
         description:
             "พยากรณ์ความต้องการใช้ไฟฟ้ารายชั่วโมงในภาคใต้ของประเทศไทย โดยเปรียบเทียบวิธีการพยากรณ์หลายรูปแบบเพื่อหาแบบจำลองที่เหมาะสมกับข้อมูล",
-
+ 
         objective:
             "ศึกษารูปแบบของความต้องการใช้ไฟฟ้ารายชั่วโมงและเปรียบเทียบวิธีการพยากรณ์หลายรูปแบบเพื่อเลือกแบบจำลองที่เหมาะสม",
-
+ 
         methodology:
             "Hourly Time Series → Training/Test Split → Naive → SES → Additive Decomposition → Holt-Winters → Forecast Accuracy Comparison",
-
+ 
         result:
             "Holt-Winters Additive ให้ค่าคลาดเคลื่อนต่ำที่สุดบน Training Set (MAE = 39.9590, RMSE = 53.8253) และเมื่อทดสอบกับ Test Set ได้ MAPE ≈ 30.83%",
-
+ 
         technicalDetails: {
             model: "Holt-Winters Additive",
             factor: "Hourly Data • Seasonal Period = 24",
             insight:
                 "ข้อมูลมีรูปแบบฤดูกาลรายวันชัดเจน แต่ค่าคลาดเคลื่อนเพิ่มขึ้นบน Test Set จึงควรตีความความแม่นยำของแบบจำลองอย่างระมัดระวัง"
         },
-
+ 
         tags: [
             "Excel",
             "Time Series",
             "Forecasting"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/electricity-demand-forecasting"
     },
-
-
+ 
+ 
     {
         id: 7,
         title: "Global Literacy Rate Analysis (1970–2024)",
@@ -923,37 +923,37 @@
         type: "Multiple Linear Regression Project",
         featured: false,
         icon: "🌍",
-
+ 
         description:
             "วิเคราะห์ปัจจัยด้านการศึกษาที่มีความสัมพันธ์กับอัตราการรู้หนังสือระดับนานาชาติ ปี 1970–2024 ด้วย Correlation Analysis และ Multiple Linear Regression",
-
+ 
         objective:
             "ศึกษาปัจจัยด้านการศึกษาและทรัพยากรทางการศึกษาที่มีความสัมพันธ์กับ Literacy Rate จากข้อมูลระดับนานาชาติช่วงปี 1970–2024",
-
+ 
         methodology:
             "Data Preparation → EDA → Outlier Analysis → Correlation Analysis → Multiple Linear Regression → Model Evaluation",
-
+ 
         result:
             "แบบจำลองมี R² = 0.541 โดย Primary Completion Rate และ Government Expenditure on Education มีความสัมพันธ์เชิงบวกอย่างมีนัยสำคัญกับ Literacy Rate ขณะที่ Out-of-school Children มี p = 0.052",
-
+ 
         technicalDetails: {
             model: "Multiple Linear Regression",
             factor: "Education Indicators • Literacy Rate",
             insight:
                 "ผลลัพธ์สะท้อนความสัมพันธ์ ไม่ใช่เหตุและผลโดยตรง ควรพิจารณาข้อจำกัดเรื่อง Missing Data, Outliers และ Multicollinearity บางตัวแปร"
         },
-
+ 
         tags: [
             "Regression",
             "Correlation Analysis",
             "Statistics"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/global-literacy-rate-analysis"
     },
-
-
+ 
+ 
     {
         id: 8,
         title: "Multivariate Environmental & Transportation Analysis",
@@ -961,38 +961,38 @@
         type: "Applied Multivariate Analysis Project",
         featured: false,
         icon: "🌐",
-
+ 
         description:
             "ประยุกต์การวิเคราะห์หลายตัวแปรกับข้อมูลสิ่งแวดล้อมและการคมนาคมของ 91 ประเทศ เพื่อจัดกลุ่มประเทศที่มีลักษณะคล้ายกันและศึกษาการจำแนกกลุ่ม",
-
+ 
         objective:
             "ศึกษาความคล้ายคลึงและจัดกลุ่มประเทศจากตัวแปรด้านสิ่งแวดล้อมและการคมนาคม พร้อมศึกษาความสามารถในการจำแนกกลุ่ม",
-
+ 
         methodology:
             "Data Standardization → Hierarchical Clustering → K-Means Clustering → Cluster Interpretation → Discriminant Analysis",
-
+ 
         result:
             "Hierarchical Clustering และ K-Means แบ่งข้อมูลออกเป็น 4 กลุ่ม โดย K-Means ได้ขนาด 46, 32, 12 และ 1 ประเทศ และ Discriminant Analysis จำแนกกลุ่มได้ถูกต้องมากกว่า 80%",
-
+ 
         technicalDetails: {
             model: "Cluster & Discriminant Analysis",
             factor: "91 Countries • 4 Variables",
             insight:
                 "ทั้งสองวิธีให้ 4 กลุ่มแต่องค์ประกอบต่างกัน โดย GCI_Value และ GHG_Value เป็นตัวแปรสำคัญในการจำแนกกลุ่ม"
         },
-
+ 
         tags: [
             "R",
             "K-Means",
             "Clustering",
             "Discriminant"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/multivariate-environment-transport-analysis"
     },
-
-
+ 
+ 
     {
         id: 9,
         title: "Household Income Survey of Student-Farmer Families",
@@ -1000,38 +1000,38 @@
         type: "Sampling & Survey Research Project",
         featured: false,
         icon: "📝",
-
+ 
         description:
             "ออกแบบและดำเนินการสำรวจรายได้ของนักศึกษาคณะวิทยาศาสตร์ด้วย Stratified Sampling ตั้งแต่ออกแบบตัวอย่าง เก็บข้อมูล จนถึงประมาณค่าทางสถิติและช่วงความเชื่อมั่น",
-
+ 
         objective:
             "ศึกษารายได้ต่อเดือนของนักศึกษาคณะวิทยาศาสตร์และสัดส่วนของนักศึกษาที่มาจากครัวเรือนภาคเกษตร",
-
+ 
         methodology:
             "Survey Design → Stratified Sampling → Proportional Allocation → Data Collection → Statistical Estimation → Confidence Interval",
-
+ 
         result:
             "ประมาณรายได้เฉลี่ยรวมได้ 7,206.91 บาทต่อเดือน โดยมี 95% CI = 6,827.34–7,586.48 บาท และ CV ≈ 2.69%",
-
+ 
         technicalDetails: {
             model: "Stratified Sampling",
             factor: "Population 3,460 • Sample 198",
             insight:
                 "แสดงการประยุกต์ Sampling Design และ Statistical Estimation ตั้งแต่ออกแบบตัวอย่างจนถึงประเมินความแม่นยำของค่าประมาณ"
         },
-
+ 
         tags: [
             "Sampling",
             "Survey",
             "Excel",
             "Google Forms"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/household-income-survey"
     },
-
-
+ 
+ 
     {
         id: 10,
         title: "Electricity Billing Calculator",
@@ -1039,45 +1039,45 @@
         type: "Python Programming Project",
         featured: false,
         icon: "🐍",
-
+ 
         description:
             "พัฒนาโปรแกรม Python คำนวณค่าไฟฟ้าจากจำนวนหน่วยการใช้งาน โดยแปลงหลักเกณฑ์การคิดค่าไฟแบบขั้นบันได ค่า Ft ค่าบริการ และ VAT ให้อยู่ในรูปแบบ Algorithm",
-
+ 
         objective:
             "พัฒนาโปรแกรม Python สำหรับแปลงกฎและขั้นตอนการคำนวณค่าไฟฟ้าแบบขั้นบันไดให้อยู่ในรูปแบบ Algorithm",
-
+ 
         methodology:
             "User Input → Conditional Logic → Progressive Rate Calculation → Service Fee → Ft → VAT → Final Bill",
-
+ 
         result:
             "พัฒนาโปรแกรมที่รับจำนวนหน่วยและคำนวณค่าไฟฟ้าฐาน ค่าบริการ ค่า Ft, VAT และยอดรวมโดยอัตโนมัติ",
-
+ 
         technicalDetails: {
             model: "Python Conditional Logic",
             factor: "Functions • If-Else • Algorithm",
             insight:
                 "แสดงการนำกฎการคำนวณและ Business Rules มาแปลงเป็น Algorithm และ Conditional Logic ในโปรแกรม Python"
         },
-
+ 
         tags: [
             "Python",
             "Google Colab",
             "Algorithm",
             "Programming"
         ],
-
+ 
         url:
             "https://github.com/mkampika190647-cpu/electricity-billing-calculator"
     }
-
+ 
 ];
-
+ 
         /* =====================================================
            SKILLS
         ====================================================== */
-
+ 
         const SKILLS = [
-
+ 
             {
                 category: "Data Analytics & Statistics",
                 icon: "📊",
@@ -1093,7 +1093,7 @@
                     "Multivariate Analysis"
                 ]
             },
-
+ 
             {
                 category: "Programming & SQL",
                 icon: "💻",
@@ -1107,7 +1107,7 @@
                     "CSS"
                 ]
             },
-
+ 
             {
                 category: "Database & Applications",
                 icon: "🗄️",
@@ -1121,7 +1121,7 @@
                     "Google Maps"
                 ]
             },
-
+ 
             {
                 category: "Machine Learning",
                 icon: "🤖",
@@ -1134,7 +1134,7 @@
                     "Scikit-learn"
                 ]
             },
-
+ 
             {
                 category: "Visualization & BI",
                 icon: "📈",
@@ -1146,7 +1146,7 @@
                     "Chart.js"
                 ]
             },
-
+ 
             {
                 category: "Tools & Technologies",
                 icon: "🛠️",
@@ -1160,7 +1160,7 @@
                     "GitHub"
                 ]
             },
-
+ 
             {
                 category: "Cloud & Data Engineering — Project Exposure",
                 icon: "☁️",
@@ -1172,33 +1172,33 @@
                     "ETL / Data Pipeline"
                 ]
             }
-
+ 
         ];
-
-
-
+ 
+ 
+ 
         /* =====================================================
            EXPERIENCE
         ====================================================== */
-
+ 
         const EXPERIENCES = [
-
+ 
             {
                 role:
                     "Intern | Physical and Environment Division, Hat Yai Campus",
-
+ 
                 organization:
                     "Prince of Songkla University",
-
+ 
                 type:
                     "Internship",
-
+ 
                 period:
                     "Apr 2025 – Jun 2025",
-
+ 
                 description:
                     "สนับสนุนการจัดการข้อมูลหม้อแปลงและพัฒนาแอปพลิเคชันด้วย AppSheet สำหรับงานตรวจสอบ การบำรุงรักษา และการปฏิบัติงานภาคสนาม",
-
+ 
                 bullets: [
                     "จัดระเบียบ ตรวจสอบ และดูแลข้อมูลหม้อแปลง ข้อมูลการตรวจสอบ และข้อมูลการบำรุงรักษาด้วย Google Sheets",
                     "พัฒนาแอปพลิเคชันจัดการข้อมูลหม้อแปลงด้วย AppSheet",
@@ -1207,23 +1207,23 @@
                     "พัฒนาระบบสร้างรายงาน PDF อัตโนมัติและ Dashboard สำหรับติดตามข้อมูล"
                 ]
             },
-
+ 
             {
                 role:
                     "Field Data Collection Assistant | Enumerator",
-
+ 
                 organization:
                     "Private Sector Research Support",
-
+ 
                 type:
                     "Field Research",
-
+ 
                 period:
                     "2023 – Present",
-
+ 
                 description:
                     "สนับสนุนการเก็บข้อมูลภาคสนามโดยดำเนินการสัมภาษณ์ตามแบบสอบถาม คัดกรองผู้ตอบตามเกณฑ์และสัดส่วนตัวอย่างที่กำหนด และตรวจสอบความครบถ้วนของข้อมูลก่อนส่งงาน",
-
+ 
                 bullets: [
                     "ดำเนินการสัมภาษณ์แบบตัวต่อตัวตามแบบสอบถามและแนวทางที่กำหนด",
                     "คัดกรองผู้ตอบตามเกณฑ์ด้านประชากรศาสตร์และคุณสมบัติของกลุ่มตัวอย่าง เช่น อายุและเพศ",
@@ -1232,35 +1232,35 @@
                     "ประสานงานกับผู้ควบคุมงานระหว่างการเก็บข้อมูลภาคสนาม"
                 ]
             }
-
+ 
         ];
-
-
-
+ 
+ 
+ 
         /* =====================================================
            INITIALIZE UI
         ====================================================== */
-
+ 
         function initUI() {
-
+ 
             renderProjects("All");
             renderFilters();
             renderSkills();
             renderExperience();
-
+ 
         }
-
-
-
+ 
+ 
+ 
         /* =====================================================
            FILTERS
         ====================================================== */
-
+ 
         function renderFilters() {
-
+ 
             const container =
                 document.getElementById("category-filters");
-
+ 
             const categories = [
                 "All",
                 "Data Engineering",
@@ -1271,10 +1271,10 @@
                 "Web Development",
                 "Programming"
             ];
-
-
+ 
+ 
             container.innerHTML = categories.map(category => `
-
+ 
                 <button
                     onclick="filterProjects('${category}')"
                     class="
@@ -1296,23 +1296,23 @@
                 >
                     ${category}
                 </button>
-
+ 
             `).join("");
-
+ 
         }
-
-
-
+ 
+ 
+ 
         /* =====================================================
            PROJECT CARDS
         ====================================================== */
-
+ 
         function renderProjects(category) {
-
+ 
             const grid =
                 document.getElementById("projects-grid");
-
-
+ 
+ 
             const filtered = (
                 category === "All"
                     ? [...PROJECTS]
@@ -1325,10 +1325,10 @@
                 }
                 return Number(b.featured) - Number(a.featured);
             });
-
-
+ 
+ 
             grid.innerHTML = filtered.map(project => `
-
+ 
                 <article
                     onclick="openDrawer(${project.id})"
                     class="
@@ -1344,9 +1344,9 @@
                         shine-effect
                     "
                 >
-
+ 
                     <div class="flex justify-between items-start mb-8">
-
+ 
                         <div
                             class="
                                 w-16 h-16
@@ -1362,8 +1362,8 @@
                         >
                             ${project.icon}
                         </div>
-
-
+ 
+ 
                         ${
                             project.featured
                                 ? `
@@ -1385,36 +1385,36 @@
                                 `
                                 : ""
                         }
-
+ 
                     </div>
-
-
+ 
+ 
                     <div class="text-blue-500 text-[9px] font-black uppercase tracking-[.3em] mb-4">
                         ${project.category}
                     </div>
-
-
+ 
+ 
                     <h3 class="text-2xl lg:text-3xl font-black uppercase italic tracking-tight mb-5 group-hover:text-blue-400 transition">
                         ${project.title}
                     </h3>
-
-
+ 
+ 
                     <p class="text-slate-400 leading-relaxed text-sm mb-8">
                         ${project.description}
                     </p>
-
-
+ 
+ 
                     <div class="mt-auto">
-
+ 
                         <div class="text-[10px] text-slate-600 font-bold mb-5">
                             ${project.type}
                         </div>
-
-
+ 
+ 
                         <div class="flex flex-wrap gap-2">
-
+ 
                             ${project.tags.map(tag => `
-
+ 
                                 <span class="
                                     bg-white/5
                                     border
@@ -1429,89 +1429,89 @@
                                 ">
                                     ${tag}
                                 </span>
-
+ 
                             `).join("")}
-
+ 
                         </div>
-
+ 
                         <div class="mt-6 text-blue-400 text-[10px] font-black uppercase tracking-[.2em] group-hover:translate-x-1 transition-transform">
                             View project details →
                         </div>
-
+ 
                     </div>
-
+ 
                 </article>
-
+ 
             `).join("");
-
+ 
         }
-
-
-
+ 
+ 
+ 
         function filterProjects(category) {
-
+ 
             document
                 .querySelectorAll(".filter-btn")
                 .forEach(button => {
-
+ 
                     const active =
                         button.innerText.trim() === category;
-
+ 
                     button.classList.toggle(
                         "bg-blue-600",
                         active
                     );
-
+ 
                     button.classList.toggle(
                         "text-white",
                         active
                     );
-
+ 
                     button.classList.toggle(
                         "text-slate-500",
                         !active
                     );
-
+ 
                 });
-
-
+ 
+ 
             renderProjects(category);
-
+ 
         }
-
-
-
+ 
+ 
+ 
         /* =====================================================
            SKILLS
         ====================================================== */
-
+ 
         function renderSkills() {
-
+ 
             const container =
                 document.getElementById("skills-container");
-
-
+ 
+ 
             container.innerHTML = SKILLS.map(skill => `
-
+ 
                 <div class="glass-card rounded-[2.5rem] p-8">
-
+ 
                     <div class="flex items-center gap-5 mb-7">
-
+ 
                         <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-2xl">
                             ${skill.icon}
                         </div>
-
+ 
                         <h3 class="font-black uppercase text-sm tracking-[.15em]">
                             ${skill.category}
                         </h3>
-
+ 
                     </div>
-
-
+ 
+ 
                     <div class="flex flex-wrap gap-2">
-
+ 
                         ${skill.items.map(item => `
-
+ 
                             <span
                                 class="
                                     text-[9px]
@@ -1529,32 +1529,32 @@
                             >
                                 ${item}
                             </span>
-
+ 
                         `).join("")}
-
+ 
                     </div>
-
+ 
                 </div>
-
+ 
             `).join("");
-
+ 
         }
-
-
-
+ 
+ 
+ 
         /* =====================================================
            EXPERIENCE
         ====================================================== */
-
+ 
         function renderExperience() {
-
+ 
             const container =
                 document.getElementById("experience-container");
-
-
+ 
+ 
             container.innerHTML =
                 EXPERIENCES.map(experience => `
-
+ 
                     <article
                         class="
                             glass-card
@@ -1567,9 +1567,9 @@
                             gap-8
                         "
                     >
-
+ 
                         <div class="lg:col-span-4">
-
+ 
                             <span class="
                                 inline-block
                                 bg-blue-500/10
@@ -1587,201 +1587,201 @@
                             ">
                                 ${experience.type}
                             </span>
-
-
+ 
+ 
                             <h3 class="text-2xl lg:text-3xl font-black leading-tight mb-3">
                                 ${experience.role}
                             </h3>
-
-
+ 
+ 
                             <p class="text-blue-400 font-bold">
                                 ${experience.organization}
                             </p>
-
+ 
                             <p class="text-slate-500 text-sm font-semibold mt-2">
                                 ${experience.period}
                             </p>
-
+ 
                         </div>
-
-
+ 
+ 
                         <div class="lg:col-span-8">
-
+ 
                             <p class="text-slate-300 leading-relaxed mb-6">
                                 ${experience.description}
                             </p>
-
-
+ 
+ 
                             <ul class="space-y-3">
-
+ 
                                 ${experience.bullets.map(item => `
-
+ 
                                     <li class="flex gap-3 text-slate-400 text-sm leading-relaxed">
-
+ 
                                         <span class="text-blue-500">•</span>
-
+ 
                                         <span>${item}</span>
-
+ 
                                     </li>
-
+ 
                                 `).join("")}
-
+ 
                             </ul>
-
+ 
                         </div>
-
+ 
                     </article>
-
+ 
                 `).join("");
-
+ 
         }
-
-
-
+ 
+ 
+ 
         /* =====================================================
            DRAWER
         ====================================================== */
-
+ 
         function openDrawer(id) {
-
+ 
             const project =
                 PROJECTS.find(item => item.id === id);
-
+ 
             if (!project) return;
-
-
+ 
+ 
             document.getElementById(
                 "drawer-category"
             ).textContent = project.category;
-
-
+ 
+ 
             document.getElementById(
                 "drawer-title"
             ).textContent = project.title;
-
-
+ 
+ 
             document.getElementById(
                 "drawer-type"
             ).textContent = project.type;
-
-
-
+ 
+ 
+ 
             document.getElementById(
                 "drawer-description-grid"
             ).innerHTML = `
-
+ 
                 <div class="glass-card rounded-[2.5rem] p-8">
-
+ 
                     <div class="text-blue-400 text-[9px] font-black uppercase tracking-[.35em] mb-5">
                         Objective
                     </div>
-
+ 
                     <p class="text-slate-200 leading-relaxed">
                         ${project.objective}
                     </p>
-
+ 
                 </div>
-
-
+ 
+ 
                 <div class="glass-card rounded-[2.5rem] p-8">
-
+ 
                     <div class="text-slate-500 text-[9px] font-black uppercase tracking-[.35em] mb-5">
                         Methodology
                     </div>
-
+ 
                     <p class="text-slate-300 leading-relaxed">
                         ${project.methodology}
                     </p>
-
+ 
                 </div>
-
-
+ 
+ 
                 <div class="bg-emerald-500/5 border border-emerald-500/20 rounded-[2.5rem] p-8">
-
+ 
                     <div class="text-emerald-400 text-[9px] font-black uppercase tracking-[.35em] mb-5">
                         Key Result
                     </div>
-
+ 
                     <p class="text-emerald-50 leading-relaxed font-semibold">
                         ${project.result}
                     </p>
-
+ 
                 </div>
-
+ 
             `;
-
-
-
+ 
+ 
+ 
             document.getElementById(
                 "drawer-model"
             ).textContent =
                 project.technicalDetails.model;
-
-
+ 
+ 
             document.getElementById(
                 "drawer-factor"
             ).textContent =
                 project.technicalDetails.factor;
-
-
+ 
+ 
             document.getElementById(
                 "drawer-insight"
             ).textContent =
                 project.technicalDetails.insight;
-
-
-
+ 
+ 
+ 
             const githubLink =
                 document.getElementById("github-link");
-
-
+ 
+ 
             if (project.url) {
-
+ 
                 githubLink.href = project.url;
-
+ 
                 githubLink.classList.remove(
                     "hidden"
                 );
-
+ 
             } else {
-
+ 
                 githubLink.classList.add(
                     "hidden"
                 );
-
+ 
             }
-
-
-
+ 
+ 
+ 
             const liveLink =
                 document.getElementById("live-link");
-
-
+ 
+ 
             if (project.liveUrl) {
-
+ 
                 liveLink.href =
                     project.liveUrl;
-
+ 
                 liveLink.classList.remove(
                     "hidden"
                 );
-
+ 
             } else {
-
+ 
                 liveLink.classList.add(
                     "hidden"
                 );
-
+ 
             }
-
-
-
+ 
+ 
+ 
             document
                 .getElementById("side-drawer")
                 .classList
                 .remove("translate-x-full");
-
-
+ 
+ 
             document
                 .getElementById("main-content")
                 .classList
@@ -1790,23 +1790,23 @@
                     "scale-[0.98]",
                     "blur-[6px]"
                 );
-
-
+ 
+ 
             document.body.style.overflow =
                 "hidden";
-
+ 
         }
-
-
-
+ 
+ 
+ 
         function closeDrawer() {
-
+ 
             document
                 .getElementById("side-drawer")
                 .classList
                 .add("translate-x-full");
-
-
+ 
+ 
             document
                 .getElementById("main-content")
                 .classList
@@ -1815,21 +1815,21 @@
                     "scale-[0.98]",
                     "blur-[6px]"
                 );
-
-
+ 
+ 
             document.body.style.overflow =
                 "";
-
+ 
         }
-
-
-
+ 
+ 
+ 
         window.addEventListener(
             "DOMContentLoaded",
             initUI
         );
-
+ 
     </script>
-
+ 
 </body>
 </html>
