@@ -219,7 +219,7 @@
 
                     <div class="inline-flex items-center px-5 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[11px] font-black uppercase tracking-[.25em] mb-8">
 
-                        Statistics&nbsp; • &nbsp;Data Analytics&nbsp; • &nbsp;Technology
+                        Data Analytics&nbsp; • &nbsp;Database&nbsp; • &nbsp;Application Development
 
                     </div>
 
@@ -741,7 +741,7 @@
         id: 3,
         title: "Apartment Management & Dashboard System",
         category: "Web Development",
-        type: "Web Application & Database Project",
+       type: "Database & Web Application Project",
         featured: true,
         featuredRank: 3,
         icon: "🏢",
@@ -822,8 +822,9 @@
         id: 5,
         title: "Netflix Content Analysis Dashboard",
         category: "Visualization",
-        type: "Tableau Interactive Dashboard Project",
-        featured: false,
+        type: "Data Visualization Project",
+        featured: true,
+        featuredRank: 5,
         icon: "📊",
 
         description:
@@ -847,9 +848,8 @@
 
         tags: [
             "Tableau",
-            "Dashboard",
-            "Visualization",
-            "EDA"
+            "Data Analysis",
+            "Interactive Dashboard"
         ],
 
         url:
@@ -862,7 +862,7 @@
 
     {
         id: 6,
-        title: "Electricity Demand Forecasting",
+        title: "Electricity Demand Forecasting in Southern Thailand",
         category: "Statistics",
         type: "Time Series Forecasting Project",
         featured: true,
@@ -889,10 +889,9 @@
         },
 
         tags: [
+            "Excel",
             "Time Series",
-            "Forecasting",
-            "Minitab",
-            "Excel"
+            "Forecasting"
         ],
 
         url:
@@ -929,8 +928,7 @@
 
         tags: [
             "Regression",
-            "Python",
-            "RapidMiner",
+            "Correlation Analysis",
             "Statistics"
         ],
 
@@ -1100,6 +1098,7 @@
                     "MySQL",
                     "Relational Database",
                     "phpMyAdmin",
+                    "Web Application Development",
                     "AppSheet",
                     "Google Sheets",
                     "Google Maps"
@@ -1177,8 +1176,11 @@
                 type:
                     "Internship",
 
+                period:
+                    "Apr 2025 – Jun 2025",
+
                 description:
-                    "สนับสนุนการจัดการข้อมูลทรัพย์สินหม้อแปลงและพัฒนา Workflow ดิจิทัลสำหรับงานตรวจสอบ บำรุงรักษา และการปฏิบัติงานภาคสนาม",
+                    "สนับสนุนการจัดการข้อมูลหม้อแปลงและพัฒนาแอปพลิเคชันด้วย AppSheet สำหรับงานตรวจสอบ การบำรุงรักษา และการปฏิบัติงานภาคสนาม",
 
                 bullets: [
                     "จัดระเบียบ ตรวจสอบ และดูแลข้อมูลหม้อแปลง ข้อมูลการตรวจสอบ และข้อมูลการบำรุงรักษาด้วย Google Sheets",
@@ -1199,15 +1201,18 @@
                 type:
                     "Field Research",
 
+                period:
+                    "2023 – Present",
+
                 description:
-                    "สนับสนุนการเก็บข้อมูลภาคสนามตามแบบสอบถามที่มีโครงสร้าง พร้อมตรวจสอบคุณภาพและความครบถ้วนของข้อมูล",
+                    "สนับสนุนการเก็บข้อมูลภาคสนามโดยดำเนินการสัมภาษณ์ตามแบบสอบถาม คัดกรองผู้ตอบตามเกณฑ์และสัดส่วนตัวอย่างที่กำหนด และตรวจสอบความครบถ้วนของข้อมูลก่อนส่งงาน",
 
                 bullets: [
-                    "ดำเนินการสัมภาษณ์แบบตัวต่อตัวตามแบบสอบถามและเกณฑ์ที่กำหนดในโครงการวิจัย",
-                    "คัดกรองผู้ตอบแบบสอบถามตามเกณฑ์และสัดส่วนตัวอย่างที่กำหนด",
-                    "ตรวจสอบความครบถ้วนและความถูกต้องของคำตอบก่อนส่งข้อมูลเข้าสู่ขั้นตอนประมวลผล",
-                    "ประสานงานกับผู้ควบคุมงานเพื่อให้การเก็บข้อมูลเป็นไปตามเป้าหมายของโครงการ",
-                    "ปฏิบัติตามจริยธรรมการวิจัย รักษาความลับของผู้ให้ข้อมูล และควบคุมคุณภาพข้อมูล"
+                    "ดำเนินการสัมภาษณ์แบบตัวต่อตัวตามแบบสอบถามและแนวทางที่กำหนด",
+                    "คัดกรองผู้ตอบตามเกณฑ์ด้านประชากรศาสตร์และคุณสมบัติของกลุ่มตัวอย่าง เช่น อายุและเพศ",
+                    "เก็บข้อมูลให้เป็นไปตามจำนวนและสัดส่วนตัวอย่างที่ได้รับมอบหมาย",
+                    "ตรวจสอบความครบถ้วนและความถูกต้องของแบบสอบถามก่อนส่งข้อมูล",
+                    "ประสานงานกับผู้ควบคุมงานระหว่างการเก็บข้อมูลภาคสนาม"
                 ]
             }
 
@@ -1574,6 +1579,10 @@
 
                             <p class="text-blue-400 font-bold">
                                 ${experience.organization}
+                            </p>
+
+                            <p class="text-slate-500 text-sm font-semibold mt-2">
+                                ${experience.period}
                             </p>
 
                         </div>
