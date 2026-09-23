@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-  <title>AMPIKA PRATUMTONG | Data Analytics & Application Development</title>
+  <title>AMPIKA PRATUMTONG | Portfolio</title>
  
     <script src="https://cdn.tailwindcss.com"></script>
  
@@ -139,6 +139,11 @@
         .reveal-up {
             animation: revealUp .9s cubic-bezier(.16,1,.3,1) both;
         }
+        :focus-visible { outline: 3px solid #60a5fa; outline-offset: 5px; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { animation: none !important; transition: none !important; }
+        }
     </style>
 </head>
  
@@ -146,13 +151,13 @@
  
     <!-- Navigation -->
     <nav class="fixed top-4 left-1/2 -translate-x-1/2 z-[90] w-[calc(100%-2rem)] max-w-5xl">
-        <div class="glass-card rounded-2xl px-4 sm:px-6 py-3 flex items-center justify-between shadow-2xl">
+        <div class="glass-card rounded-2xl px-4 sm:px-6 py-3 flex flex-wrap items-center justify-center sm:justify-between gap-2 shadow-2xl">
             <a href="#top" class="font-black tracking-tight text-sm sm:text-base">AMPIKA</a>
-            <div class="flex items-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-bold text-slate-400">
+            <div class="flex flex-wrap justify-center items-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-bold text-slate-400">
                 <a href="#about" class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">About</a>
                 <a href="#projects" class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">Projects</a>
-                <a href="#skills" class="hidden sm:block px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">Skills</a>
-                <a href="#experience" class="hidden sm:block px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">Experience</a>
+                <a href="#skills" class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">Skills</a>
+                <a href="#experience" class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition">Experience</a>
             </div>
         </div>
     </nav>
@@ -172,7 +177,7 @@
         <!-- =================================================
              HERO
         ================================================== -->
-        <header id="top" class="pt-32 lg:pt-36 pb-20 px-6 max-w-7xl mx-auto">
+        <header id="top" class="pt-40 sm:pt-32 lg:pt-36 pb-20 px-6 max-w-7xl mx-auto">
  
             <div class="flex flex-col lg:flex-row items-center gap-14 lg:gap-20">
  
@@ -219,11 +224,11 @@
  
                     <div class="inline-flex items-center px-5 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[11px] font-black uppercase tracking-[.25em] mb-8">
  
-                        Data Analytics&nbsp; • &nbsp;Database&nbsp; • &nbsp;Application Development
+                        Personal Portfolio&nbsp; • &nbsp;Projects &amp; Experience
  
                     </div>
  
-                    <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-gradient leading-[.9] uppercase italic">
+                    <h1 class="text-[clamp(2rem,8vw,6rem)] font-black mb-6 tracking-tighter text-gradient leading-[.9] uppercase italic">
  
                         AMPIKA
                         <br>
@@ -233,11 +238,11 @@
  
                     <p class="text-lg md:text-xl text-slate-300 font-medium mb-10 max-w-3xl leading-relaxed border-l-4 border-blue-600/40 pl-6 mx-auto lg:mx-0">
   
-                        Statistics student with experience in data analytics, database management,
-                         dashboards, and data-driven application development. Skilled in Python, SQL,
-                          Power BI, Tableau, and AppSheet, with experience transforming data into
-                          practical insights and digital solutions to support decision-making and
-                          operational efficiency.
+                        Hi, I’m Ampika, a Statistics student at Prince of Songkla University.
+                        This portfolio brings together projects I’ve built and contributed to,
+                        the tools I’ve used, and my experience from university, an internship,
+                        teaching assistance, and field research. Explore the work to see how each
+                        project was approached and what it produced.
                     </p>
  
  
@@ -262,15 +267,14 @@
                         </a>
  
                         <a
-                            id="resume-download-link"
-                            href="#"
-                            download
+                            id="explore-projects-link"
+                            href="#projects"
                             class="flex items-center gap-3 px-7 py-4 bg-white/5 border border-white/10 rounded-2xl font-black text-xs uppercase tracking-[.15em] hover:bg-white/10 transition-all"
                         >
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6 6 6-6 6" />
                             </svg>
-                            Download Resume
+                            Explore Projects
                         </a>
  
                         <a
@@ -291,10 +295,10 @@
                     </div>
  
                     <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-2 text-[10px] font-black uppercase tracking-[.16em] text-slate-500">
-                        <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">Data Analytics</span>
+                        <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">Data Analysis</span>
                         <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">Machine Learning</span>
                         <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">SQL & Database</span>
-                        <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">Data Applications</span>
+                        <span class="px-3 py-2 rounded-xl bg-white/[.03] border border-white/5">Applications</span>
                     </div>
  
                 </div>
@@ -321,14 +325,16 @@
                     </div>
  
                     <h2 class="text-3xl lg:text-4xl font-black tracking-tight mb-7">
-                        Data, Analytics & Practical Systems
+                        A little about me
                     </h2>
  
                     <p class="text-slate-400 text-lg leading-relaxed">
-                        I study Statistics and have worked on projects involving data analysis, machine learning,
-                        SQL and databases, dashboards, forecasting, and application development.
-                        I am most interested in work that combines analytical thinking with technology,
-                        especially data-driven systems that can be used in real work.
+                        My work includes analyzing datasets, building dashboards, developing applications,
+                        and carrying out survey projects. Some projects were completed independently,
+                        while others were team assignments. During my internship, I worked on a
+                        transformer data management application, tested its functions, created a user
+                        manual, and guided staff on how to use it. I also support students as a teaching
+                        assistant and collect data through field interviews.
                     </p>
  
                 </div>
@@ -392,7 +398,7 @@
                     <div class="max-w-3xl">
  
                         <div class="text-blue-500 font-black text-[11px] uppercase tracking-[.55em] mb-5">
-                            Selected Work
+                            Project Collection
                         </div>
  
                         <h2 class="text-5xl lg:text-7xl font-black uppercase italic tracking-tighter leading-none mb-8">
@@ -400,7 +406,7 @@
                         </h2>
  
                         <p class="text-slate-400 leading-relaxed max-w-2xl">
-                            โปรเจกต์ที่คัดเลือกเน้น Data Analytics, Machine Learning, Database และ Application Development โดยมีงานด้าน Statistics, Forecasting และ Data Visualization เป็นพื้นฐานเสริม กดที่การ์ดเพื่อดูวิธีการทำงาน ผลลัพธ์ และ GitHub Repository
+                            รวมผลงานจากการเรียนและการฝึกงาน ทั้งงานเดี่ยวและงานกลุ่ม แต่ละโปรเจกต์แสดงโจทย์ ขั้นตอนการทำงาน เครื่องมือ ผลลัพธ์ และข้อสังเกต กดที่การ์ดเพื่อดูรายละเอียดและเปิดไฟล์ผลงานใน GitHub
                         </p>
  
                     </div>
@@ -431,11 +437,11 @@
                 <div class="text-center mb-14">
  
                     <div class="text-blue-500 font-black text-[11px] uppercase tracking-[.55em] mb-4">
-                        Technical Skills
+                        Tools & Methods
                     </div>
  
                     <h2 class="text-4xl lg:text-6xl font-black tracking-tighter uppercase italic">
-                        Skills & Technologies
+                        Skills in Practice
                     </h2>
  
                 </div>
@@ -458,11 +464,11 @@
                 <div class="mb-12">
  
                     <div class="text-blue-500 font-black text-[11px] uppercase tracking-[.55em] mb-4">
-                        Professional Background
+                        Along the Way
                     </div>
  
                     <h2 class="text-4xl lg:text-6xl font-black tracking-tighter uppercase italic">
-                        Work Experience
+                        Experience
                     </h2>
  
                 </div>
@@ -478,8 +484,8 @@
         </main>
  
         <footer class="border-t border-white/5 py-10 px-6 text-center text-slate-500 text-xs">
-            <p>Selected academic and internship projects in data analytics, statistics, and technology.</p>
-            <p class="mt-2">Ampika Pratumtong · Statistics · Prince of Songkla University</p>
+            <p>A collection of projects, coursework, and experiences by Ampika Pratumtong.</p>
+            <p class="mt-2">Made through study, practice, and collaboration.</p>
         </footer>
  
     </div>
@@ -491,7 +497,8 @@
     ====================================================== -->
     <div
         id="side-drawer"
-        class="fixed top-0 right-0 h-screen w-full bg-[#020617] z-[100] drawer-transition translate-x-full flex flex-col"
+        role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true" inert tabindex="-1"
+        class="fixed top-0 right-0 h-[100dvh] w-full bg-[#020617] z-[100] drawer-transition translate-x-full flex flex-col"
     >
  
         <!-- Header -->
@@ -500,7 +507,7 @@
             <div class="flex items-center gap-5">
  
                 <button
-                    onclick="closeDrawer()"
+                    onclick="closeDrawer()" aria-label="Close project details"
                     class="p-3 bg-white/5 rounded-xl hover:bg-blue-600 transition"
                 >
                     ←
@@ -530,7 +537,7 @@
  
  
             <button
-                onclick="closeDrawer()"
+                onclick="closeDrawer()" aria-label="Close project details"
                 class="text-slate-500 hover:text-white text-3xl"
             >
                 ×
@@ -648,7 +655,7 @@
  
  
                         <button
-                            onclick="closeDrawer()"
+                            onclick="closeDrawer()" aria-label="Close project details"
                             class="w-full py-4 glass-card rounded-2xl text-xs font-black uppercase tracking-[.35em]"
                         >
                             กลับไปที่ Portfolio
@@ -671,13 +678,7 @@
     ====================================================== -->
     <script>
  
-        /* =====================================================
-           RESUME PDF LINK
-           TODO: replace this URL with the hosted resume PDF link
-        ====================================================== */
-        document.getElementById("resume-download-link").href = "Ampika_Pratumtong_Resume.pdf";
- 
-        /* =====================================================
+/* =====================================================
            PROJECT DATA
         ====================================================== */
  
@@ -693,13 +694,13 @@
         icon: "📍",
  
         description:
-            "พัฒนาแอปพลิเคชันด้วย AppSheet สำหรับจัดเก็บข้อมูลหม้อแปลง การตรวจสอบ และการบำรุงรักษา พร้อมพิกัด GPS การนำทางผ่าน Google Maps แบบฟอร์มภาคสนาม รายงาน PDF และ Dashboard",
+            "พัฒนาแอปพลิเคชันด้วย AppSheet สำหรับจัดเก็บข้อมูลหม้อแปลง การตรวจสอบ และการบำรุงรักษา พร้อมพิกัด GPS การนำทางผ่าน Google Maps และ Apple Maps แบบฟอร์มภาคสนาม รายงาน PDF และ Dashboard",
  
         objective:
             "พัฒนาแอปพลิเคชันสำหรับจัดเก็บและบริหารจัดการข้อมูลหม้อแปลง การตรวจสอบ และการบำรุงรักษา เพื่อสนับสนุนการปฏิบัติงานภาคสนาม",
  
         methodology:
-            "Data Preparation → Google Sheets → AppSheet → Digital Forms → GPS / Google Maps → PDF Reports → Dashboard",
+            "Data Preparation → Google Sheets → AppSheet → Digital Forms → GPS / Google Maps / Apple Maps → PDF Reports → Dashboard",
  
         result:
             "พัฒนาแอปพลิเคชันที่รองรับการค้นหาข้อมูลหม้อแปลง การบันทึกข้อมูลภาคสนาม การนำทาง การสร้างรายงาน PDF และการติดตามข้อมูลผ่าน Dashboard",
@@ -715,6 +716,7 @@
     "AppSheet",
     "Google Sheets",
     "Google Maps",
+    "Apple Maps",
     "Data Management"
 ],
  
@@ -891,7 +893,7 @@
         id: 6,
         title: "Electricity Demand Forecasting in Southern Thailand",
         category: "Statistics",
-        type: "Time Series Forecasting Project",
+        type: "Academic Team Project · Time Series Forecasting",
         featured: true,
         featuredRank: 4,
         icon: "⚡",
@@ -930,7 +932,7 @@
         id: 7,
         title: "Global Literacy Rate Analysis (1970–2024)",
         category: "Statistics",
-        type: "Multiple Linear Regression Project",
+        type: "Academic Team Project · Multiple Linear Regression",
         featured: false,
         icon: "🌍",
  
@@ -968,7 +970,7 @@
         id: 8,
         title: "Multivariate Environmental & Transportation Analysis",
         category: "Statistics",
-        type: "Applied Multivariate Analysis Project",
+        type: "Academic Team Project · Multivariate Analysis",
         featured: false,
         icon: "🌐",
  
@@ -988,7 +990,7 @@
             model: "Cluster & Discriminant Analysis",
             factor: "91 Countries • 4 Variables",
             insight:
-                "ทั้งสองวิธีให้ 4 กลุ่มแต่องค์ประกอบต่างกัน โดย GCI_Value และ GHG_Value เป็นตัวแปรสำคัญในการจำแนกกลุ่ม"
+                "ทั้งสองวิธีให้ 4 กลุ่มแต่องค์ประกอบต่างกัน โดย GCI_Value และ GHG_Value เป็นตัวแปรสำคัญในการจำแนกกลุ่ม ผลความถูกต้องมากกว่า 80% เป็นผลจาก Confusion Matrix ที่รายงานในโครงงาน โดยยังไม่ได้ระบุว่าเป็นผลบนชุดทดสอบอิสระ"
         },
  
         tags: [
@@ -1007,7 +1009,7 @@
         id: 9,
         title: "Household Income Survey of Student-Farmer Families",
         category: "Statistics",
-        type: "Sampling & Survey Research Project",
+        type: "Academic Team Project · Sampling & Survey Research",
         featured: false,
         icon: "📝",
  
@@ -1066,7 +1068,7 @@
             model: "Python Conditional Logic",
             factor: "Functions • If-Else • Algorithm",
             insight:
-                "แสดงการนำกฎการคำนวณและ Business Rules มาแปลงเป็น Algorithm และ Conditional Logic ในโปรแกรม Python"
+                "แสดงการนำกฎการคำนวณและ Business Rules มาแปลงเป็น Algorithm และ Conditional Logic ในโปรแกรม Python โดยอัตราค่าไฟ ค่าบริการ และค่า Ft เป็นค่าที่กำหนดในโปรเจกต์ และอาจไม่ตรงกับอัตราปัจจุบัน"
         },
  
         tags: [
@@ -1096,6 +1098,7 @@
             "R",
             "EDA",
             "Data Cleaning",
+            "Data Validation",
             "Regression",
             "Statistical Analysis",
             "Multivariate Analysis",
@@ -1124,12 +1127,13 @@
         items: [
             "Power BI",
             "Tableau",
-            "Dashboard Development"
+            "Dashboard Development",
+            "Automated PDF Reporting"
         ]
     },
 
     {
-        category: "Application & Data Tools",
+        category: "Application, Tools & User Support",
         icon: "🗄️",
         items: [
             "AppSheet",
@@ -1143,7 +1147,10 @@
             "RapidMiner",
             "PowerPoint",
             "Word",
-            "Canva"
+            "Canva",
+            "System Testing",
+            "User Documentation",
+            "User Guidance"
         ]
     }
 
@@ -1156,83 +1163,46 @@
         ====================================================== */
  
         const EXPERIENCES = [
- 
-            {
-                role:
-                    "Intern | Physical and Environment Division, Hat Yai Campus",
- 
-                organization:
-                    "Prince of Songkla University",
- 
-                type:
-                    "Internship",
- 
-                period:
-                    "Apr 2026 – Jun 2026",
- 
-                description:
-                    "Developed an AppSheet-based application for transformer asset, inspection, and maintenance data management, integrating Google Sheets, GPS/Google Maps, digital forms, automated PDF reports, and dashboards.",
- 
-                bullets: [
-                    "จัดระเบียบ ตรวจสอบ และดูแลข้อมูลหม้อแปลง ข้อมูลการตรวจสอบ และข้อมูลการบำรุงรักษาด้วย Google Sheets",
-                    "พัฒนาแอปพลิเคชันจัดการข้อมูลหม้อแปลงด้วย AppSheet",
-                    "เชื่อมโยงพิกัด GPS และการนำทางด้วย Google Maps เพื่อสนับสนุนการปฏิบัติงานภาคสนาม",
-                    "พัฒนาแบบฟอร์มดิจิทัลสำหรับบันทึกข้อมูลการตรวจสอบและการบำรุงรักษา",
-                    "พัฒนาระบบสร้างรายงาน PDF อัตโนมัติและ Dashboard สำหรับติดตามข้อมูล"
-                ]
-            },
     {
-    role:
-        "Teaching Assistant | Department of Mathematics and Statistics",
-
-    organization:
-        "Prince of Songkla University",
-
-    type:
-        "Teaching Assistant",
-
-    period:
-        "Jun 2026 – Present",
-
-    description:
-        "Supported SQL and Fundamental Statistics courses through classroom assistance, software demonstrations, assignment review, score checking, and student guidance on SQL queries and statistical exercises.",
-
-    bullets: [
-        "ช่วยสอนและอธิบายเนื้อหา SQL และแบบฝึกหัดในชั้นเรียน",
-        "รันโปรแกรมและสาธิตขั้นตอนการทำงานให้แก่นักศึกษา",
-        "ตรวจงานและตรวจความถูกต้องของคำตอบและผลลัพธ์",
-        "ตรวจและบันทึกคะแนนตามเกณฑ์ที่อาจารย์กำหนด",
-        "ช่วยอธิบายโจทย์สถิติพื้นฐานให้แก่นักศึกษาต่างคณะ",
-        "ให้คำแนะนำแก่นักศึกษาระหว่างทำแบบฝึกหัด"
-    ]
-},
- 
-            {
-                role:
-                    "Field Data Collection Assistant | Enumerator",
- 
-                organization:
-                    "Private Sector Research Support",
- 
-                type:
-                    "Field Research",
- 
-                period:
-                    "2023 – Present",
- 
-                description:
-                    "Conducted structured field interviews, screened respondents based on specified demographic and sampling criteria, and checked survey data for completeness and accuracy.",
- 
-                bullets: [
-                    "ดำเนินการสัมภาษณ์แบบตัวต่อตัวตามแบบสอบถามและแนวทางที่กำหนด",
-                    "คัดกรองผู้ตอบตามเกณฑ์ด้านประชากรศาสตร์และคุณสมบัติของกลุ่มตัวอย่าง เช่น อายุและเพศ",
-                    "เก็บข้อมูลให้เป็นไปตามจำนวนและสัดส่วนตัวอย่างที่ได้รับมอบหมาย",
-                    "ตรวจสอบความครบถ้วนและความถูกต้องของแบบสอบถามก่อนส่งข้อมูล",
-                    "ประสานงานกับผู้ควบคุมงานระหว่างการเก็บข้อมูลภาคสนาม"
-                ]
-            }
- 
-        ];
+        "role": "Intern | Electrical and Air Conditioning Unit",
+        "organization": "Physical and Environment Division, Prince of Songkla University — Hat Yai Campus",
+        "type": "Internship",
+        "period": "Apr 2026 – Jun 2026",
+        "description": "Developed a transformer data management application and supported data preparation, reporting, system testing, user documentation, and staff guidance.",
+        "bullets": [
+            "ทำความสะอาด ตรวจสอบความถูกต้อง ลบข้อมูลซ้ำ และจัดโครงสร้างข้อมูลใน Excel และ Google Sheets เพื่อเตรียมใช้งานในแอปพลิเคชัน",
+            "พัฒนาแอปพลิเคชันด้วย AppSheet สำหรับจัดเก็บข้อมูลหม้อแปลง ประวัติการตรวจสอบ และการบำรุงรักษา",
+            "สร้างแบบฟอร์มดิจิทัล รายงาน PDF อัตโนมัติ และ Dashboard เพื่อสนับสนุนการบันทึก ติดตาม และรายงานข้อมูล",
+            "ทดสอบการทำงานของระบบและตรวจสอบความถูกต้องของข้อมูลในแอปพลิเคชัน",
+            "จัดทำคู่มือและแนะนำวิธีใช้งานแอปพลิเคชันให้แก่เจ้าหน้าที่",
+            "เชื่อมโยงพิกัด GPS และการนำทางผ่าน Google Maps และ Apple Maps เพื่อสนับสนุนการปฏิบัติงานภาคสนาม"
+        ]
+    },
+    {
+        "role": "Teaching Assistant | Statistics Program, Division of Computational Science",
+        "organization": "Faculty of Science, Prince of Songkla University",
+        "type": "Teaching Assistant",
+        "period": "Jun 2026 – Present",
+        "description": "Support two courses—SQL and Data Analysis, and Fundamental Statistics—through practical guidance, software support, assignment review, and score checking.",
+        "bullets": [
+            "ช่วยสอนรายวิชา SQL and Data Analysis สำหรับนักศึกษาสถิติชั้นปีที่ 3 ครอบคลุมการจัดการฐานข้อมูล การเขียน SQL การเชื่อมต่อฐานข้อมูล และการสร้าง Dashboard ด้วย Power BI พร้อมช่วยแก้ปัญหาด้านข้อมูลและการใช้งานซอฟต์แวร์",
+            "ช่วยสอนรายวิชา Fundamental Statistics สำหรับนักศึกษาชั้นปีที่ 2–3 ในหลักสูตรเกษตรศาสตร์และสัตวศาสตร์ คณะทรัพยากรธรรมชาติ โดยให้คำแนะนำเกี่ยวกับแนวคิดทางสถิติ แบบฝึกหัด และการใช้ซอฟต์แวร์",
+            "ช่วยตรวจงานและตรวจสอบคะแนนให้ถูกต้องและสอดคล้องกับเกณฑ์การประเมิน"
+        ]
+    },
+    {
+        "role": "Part-time Research Enumerator",
+        "organization": "Market Research Company",
+        "type": "Part-time · Field Research",
+        "period": "2023 – Present",
+        "description": "Conduct field interviews for market research and check survey data for completeness and accuracy while maintaining respondent confidentiality.",
+        "bullets": [
+            "สัมภาษณ์ภาคสนามตามแบบสอบถามสำหรับโครงการวิจัยตลาด และคัดกรองผู้ตอบตามกลุ่มเป้าหมายและเกณฑ์การสุ่มตัวอย่างที่กำหนด",
+            "ตรวจสอบความครบถ้วนและความถูกต้องของข้อมูลแบบสำรวจ ก่อนส่งมอบข้อมูล",
+            "รักษาความลับของผู้ตอบแบบสอบถามและจัดการข้อมูลอย่างรับผิดชอบตลอดกระบวนการเก็บข้อมูล"
+        ]
+    }
+];
  
  
  
@@ -1330,6 +1300,8 @@
  
                 <article
                     onclick="openDrawer(${project.id})"
+                    onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDrawer(${project.id}); }"
+                    role="button" tabindex="0" aria-haspopup="dialog" aria-controls="side-drawer" aria-label="View ${project.title.replaceAll('&', '&amp;')}"
                     class="
                         glass-card
                         ${project.featured ? "featured-card" : ""}
@@ -1641,12 +1613,20 @@
            DRAWER
         ====================================================== */
  
+        let drawerTrigger = null;
+
         function openDrawer(id) {
  
             const project =
                 PROJECTS.find(item => item.id === id);
  
             if (!project) return;
+            drawerTrigger = document.activeElement;
+            const drawer = document.getElementById("side-drawer");
+            drawer.inert = false;
+            drawer.setAttribute("aria-hidden", "false");
+            document.getElementById("main-content").inert = true;
+            document.querySelector("nav").inert = true;
  
  
             document.getElementById(
@@ -1791,14 +1771,20 @@
                 );
  
  
-            document.body.style.overflow =
-                "hidden";
+            document.body.style.overflow = "hidden";
+            drawer.querySelector("button").focus({ preventScroll: true });
  
         }
  
  
  
         function closeDrawer() {
+            const drawer = document.getElementById("side-drawer");
+            document.getElementById("main-content").inert = false;
+            document.querySelector("nav").inert = false;
+            if (drawerTrigger && drawerTrigger.isConnected) drawerTrigger.focus({ preventScroll: true });
+            drawer.inert = true;
+            drawer.setAttribute("aria-hidden", "true");
  
             document
                 .getElementById("side-drawer")
@@ -1823,6 +1809,25 @@
  
  
  
+        document.addEventListener("keydown", event => {
+            const drawer = document.getElementById("side-drawer");
+            if (drawer.inert) return;
+            if (event.key === "Escape") {
+                event.preventDefault();
+                closeDrawer();
+            }
+            if (event.key === "Tab") {
+                const elements = [...drawer.querySelectorAll('button, a[href], [tabindex="0"]')]
+                    .filter(element => element.getClientRects().length > 0);
+                const first = elements[0], last = elements[elements.length - 1];
+                if (event.shiftKey && (document.activeElement === first || document.activeElement === drawer)) {
+                    event.preventDefault(); last?.focus();
+                } else if (!event.shiftKey && document.activeElement === last) {
+                    event.preventDefault(); first?.focus();
+                }
+            }
+        });
+
         window.addEventListener(
             "DOMContentLoaded",
             initUI
@@ -1833,8 +1838,6 @@
 </body>
 </html>
  
-
-
 
 
 
