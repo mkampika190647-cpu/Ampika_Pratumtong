@@ -144,6 +144,32 @@
             html { scroll-behavior: auto; }
             *, *::before, *::after { animation: none !important; transition: none !important; }
         }
+        /* One scroll surface for the complete project detail page. */
+        #side-drawer {
+            height: 100vh;
+            height: 100dvh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            overscroll-behavior-y: contain;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-gutter: stable;
+            scrollbar-width: auto;
+            scrollbar-color: #60a5fa #0f172a;
+        }
+        #side-drawer::-webkit-scrollbar { width: 14px; }
+        #side-drawer::-webkit-scrollbar-track { background: #0f172a; }
+        #side-drawer::-webkit-scrollbar-thumb {
+            background: #60a5fa;
+            border: 3px solid #0f172a;
+            border-radius: 12px;
+        }
+        #side-drawer::-webkit-scrollbar-thumb:hover { background: #93c5fd; }
+        .project-drawer-header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: #020617;
+        }
     </style>
 </head>
  
@@ -498,11 +524,11 @@
     <div
         id="side-drawer"
         role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true" inert tabindex="-1"
-        class="fixed top-0 right-0 h-[100dvh] w-full bg-[#020617] z-[100] drawer-transition translate-x-full flex flex-col"
+        class="fixed top-0 right-0 h-[100dvh] w-full bg-[#020617] z-[100] drawer-transition translate-x-full"
     >
  
         <!-- Header -->
-        <div class="p-6 lg:p-8 border-b border-white/5 flex items-center justify-between">
+        <div class="project-drawer-header px-4 py-3 sm:px-6 sm:py-4 lg:px-8 border-b border-white/5 flex items-center justify-between gap-3">
  
             <div class="flex items-center gap-5">
  
@@ -523,7 +549,7 @@
  
                     <h2
                         id="drawer-title"
-                        class="text-2xl lg:text-4xl font-black text-white tracking-tight uppercase italic mt-1"
+                        class="text-lg sm:text-2xl lg:text-3xl font-black text-white tracking-tight uppercase italic mt-1 break-words"
                     ></h2>
  
                     <p
@@ -538,7 +564,7 @@
  
             <button
                 onclick="closeDrawer()" aria-label="Close project details"
-                class="text-slate-500 hover:text-white text-3xl"
+                class="shrink-0 w-11 h-11 flex items-center justify-center rounded-xl text-slate-300 hover:bg-white/10 hover:text-white text-3xl"
             >
                 ×
             </button>
@@ -547,7 +573,7 @@
  
  
         <!-- Content -->
-        <div class="flex-grow overflow-y-auto no-scrollbar p-6 lg:p-14">
+        <div class="p-5 sm:p-6 lg:p-10 pb-16">
  
             <div class="max-w-7xl mx-auto space-y-10">
  
@@ -1623,6 +1649,7 @@
             if (!project) return;
             drawerTrigger = document.activeElement;
             const drawer = document.getElementById("side-drawer");
+            drawer.scrollTop = 0;
             drawer.inert = false;
             drawer.setAttribute("aria-hidden", "false");
             document.getElementById("main-content").inert = true;
